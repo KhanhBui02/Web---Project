@@ -1,0 +1,295 @@
+    /* Reset CSS */
+    *
+    {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        display: inline-block;
+    }
+    a.header-icon{
+        text-decoration: none;
+    }
+
+    
+    
+    .header .img-ig {
+        width: 10%; 
+    }
+
+    .img_logo {
+        width: 20%;
+        height: auto;
+        margin-left: 36px;
+        margin-right: 70px;
+    }
+
+    .search_bar {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .search_text {
+        padding: 0 16px;
+    }
+
+    .button {
+         display: inline-block;  
+         background-color: rgb(250, 54, 54);
+         margin: 0px;
+         padding: 4px;
+    }
+
+    .button > a {
+        text-decoration: none;
+        color: white;
+    }
+ 
+    .search_bar {
+       
+
+    }
+
+    .icon {
+        display: inline-block;
+    }
+    .navigation {
+        height: 46px;
+        background-color:rgb(250, 54, 54);
+        border-radius: 8px;
+        margin: 12px 0 4px 0;
+    }
+
+    .list_nav {
+        display:flex;
+        justify-content: center;
+    }
+
+    .list_nav .item_nav > a{
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+        line-height: 46px;
+        padding: 0 24px 0 24px;
+        margin: 0 72px;
+    }
+
+    .text_nav1 {
+        position: relative;
+    }
+
+    .navigation .item_nav {
+        margin: 0 60px 0px 0px;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+
+    .list_nav .item_nav :hover {
+        color: rgb(250, 54, 54);
+        background-color: white;
+        display: block;
+    }
+
+    .large_banner{
+        width: 80%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4px;
+    }
+    
+    .banner2 {
+        display: inline-block;
+        width: 20%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .list_banner {
+        
+    }
+
+    .heading1 {
+        background-color: firebrick;
+        color: white;
+        width: 80%;
+        align-items:center;
+    }
+    
+    #wrapper {
+        width: 80%;
+        height:auto;
+        margin:0 auto;
+    }
+    .headline{
+        text-align: center;
+        margin: 40px 0px;
+        display: block;
+
+    }
+    h1{
+        font-size: 18px;
+        color: white;
+        background-color:rgb(250, 54, 54);
+        padding: 20px 20px;
+        text-transform: uppercase;
+        border: 1px;
+        font-weight:600;
+        
+    }
+    
+    ul.products{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    ul.products li{
+        flex-basis: 15%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box; 
+        margin-bottom: 10px;  
+    }
+    ul.products li img{
+        width: 100%;
+        height: auto;
+    }
+    .banner-pc li img{
+        width: 120%;
+        height: 450px;
+    }
+    ul.products li .product-top{
+        position: relative;
+        overflow: hidden;
+    }
+    ul.products li .product-top .product-thumb{
+        display:block;
+    }
+    ul.products li:hover .product-top .product-thumb img{
+        filter: opacity(80%);
+    }
+    ul.products li .product-top .product-thumb img{
+        display:block;
+    }
+    ul.products li .product-top a.buy-now{
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        display:block;
+        background-color:rgb(250, 54, 54);
+        color: #fff;
+        padding: 10px 0px;
+        position: absolute;
+        bottom:-45px;
+        width:100%;
+        transition: 0.25s ease-in-out;
+        opacity: 0.85;
+    }
+    ul.products li:hover a.buy-now{
+        bottom: 0px;
+    }
+    ul.products li .product-info{
+        padding:10px 0px;
+    }
+    .product-info a{
+        display: block;
+        text-decoration: none;
+    }
+    a.product-cat{
+        font-size: 11px;
+        color:#9e9e9e;
+        text-transform: uppercase;  
+        padding: 3px 0px;
+    }
+    .product-name{
+        color: black;
+        padding: 3px 0px;
+    }
+    .product-price{
+        color: black;
+        padding: 2px 0px;
+        font-size:600;
+    }
+    .all-product{
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        font-size: 15px;
+    }
+    .grid{
+        width: 1200px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .grid_row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .grid_column-2-4{
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 20%;
+    }
+    .grid_column-5-5{
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 50%;
+    }
+    .grid_column-3-3-3{
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 33%;
+    }
+    .footer_search_bar{
+        align-content: right;
+    }
+    .footer{
+        padding-top: 16px;
+        border-top: 4px solid var(--primary-color);
+        background-color: 
+    }
+    .footer_heading{
+        padding-bottom: 20px;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: var(--text-color);
+    }
+    .footer_super_heading{
+        font-size: 2.6rem;
+    }
+    .footer-list{
+        padding-left: 0;
+        list-style: none;
+    }
+    .footer-item_link{
+        list-style: none;
+        text-decoration: none;
+        font: size 1.2rem;
+        color:#666;
+        padding: 2px 0;
+        display: block;
+    }
+    .footer-item_link:hover{
+        color: red;
+    }
+    .footer-item > p.footer_super_heading2{
+        font-size: 1.5rem;
+        padding-bottom: 20px;
+    }
+    .footer-item > p.footer-copyright{
+        font-size: 0.8rem;
+        padding-bottom: 20px;
+    }
+    .footer-icon_link{
+        font-size:1.5rem;
+        text-decoration: none;
+        padding-right: 7px;
+    }
