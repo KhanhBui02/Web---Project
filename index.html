@@ -4,587 +4,982 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <title>KLK's Computers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KLK's Computers- Hi-end PC & Laptop</title>
 </head>
-<b>
-    <!-- Header + banner -->
-    <div class="header">
-        <div class="icon">
-            <img src="/images/Logo/newlogo.png" alt="" class="img_logo">
-            <div class ="search_bar">
-                <input type="text" class="search_text">
-                <a href="#"  class="search_button"></a>
+<body>
+
+    <!-- Hiệu ứng tuyết rơi -->
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+      </div>
+      
+    <!-- Header with search -->
+    <div class="header_withsearch">
+            <div class="header_logo" >
+                <a href="/">
+                    <img src="/images/Logo/newlogo.png" alt="" class="header_logo_img">
+                </a>
             </div>
-            <a href="#" class="header-icon">
-                <i class="fab fa-facebook-square" ></i>
-            </a>
-            <a href="#"class="header-icon">   
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#"class="header-icon">
-                <img src="/images/Icon/phoneIcon.png" alt="" class="img_ig">
-            </a>
-            <a href="#"class="header-icon">
-                <img src="/images/Icon/loginIcon.png" alt="" class="img_ig">
-            </a>
-            <a href="#"class="header-icon">
-                <img src="/images/Icon/cartIcon.png" alt="" class="img_ig">
-            </a>
-        </div> 
+            <div class="header_search">
+                <input type="text" placeholder="Search" class="header_search_input"> 
+                <a href="" id="search_link">
+                    <i class="fas fa-desktop"></i>
+                    By name <i>|</i> 
+                </a> 
+                <a href="" id="search_link">
+                    <i class="far fa-copyright"></i>
+                    By category <i>|</i>
+                </a>
+                <a href="" id="search_link">
+                    <i class="far fa-money-bill-alt"></i>
+                    By price
+                </a>
+            </div>
+            <div class="header_search_btn">
+                <a href="#">
+                    <i class="header_search_btn_icon fas fa-search"></i>
+                </a>
+            </div>   
+            <div class="header_cart" >
+                <a href="#"><i data-count="3" class="header_cart_icon fas fa-shopping-cart"></i></a>
+                <p>Shopping-Cart</p>
+            </div>
+            <div class="header_account" >
+                <a href="/dangnhap.html"><i class="header_account_icon fas fa-user-circle"></i></a>
+                <p>Sign in / Sign up</p>
+            </div>
+            <div class="header_phone" >
+                <a href="#"><i class="header_phone_icon fas fa-phone"></i></a>
+                <p>(078)-3984721</p>
+            </div>
     </div>
+
+    <!--Navigation -->
 
     <div class="navigation">
-        <ul class="list_nav">
-            <li class="item_nav">
-                <a href="#" class="text_nav">Home</a>
-            </li>
-            <li class="item_nav">
-                <a href="#" class="text_nav1" >Products</a>
-            </li>
-            <li class="item_nav">
-                <a href="#" class="text_nav">News</a>
-            </li>
-            <li class="item_nav">
-                <a href="#" class="text_nav">Sale</a>
-            </li>
-        </ul>
+        <div id="wrapper-navigation">
+            <div class="header-grid">
+                    <div class="grid_row">
+                        <div class="header-grid_column-2-4">
+                            <ul class="header-list">
+                                <li><a href="#" class="navigation-font header-list">
+                                    <i class="fas fa-home"></i> HOME
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="header-grid_column-2-4">
+                            <ul class="header-list">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropbtn navigation-font">
+                                        <i class="fas fa-list"></i> PRODUCTS
+                                    </a>
+                                    <div class="dropdown-content">
+                                    <a class="dropdown-content-block" href="#">Hot Products</a>
+                                    <a href="#">Hi-end PC</a>
+                                    <a href="#">Laptop Gaming</a>
+                                    <a href="#">Minotor</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        <div class="header-grid_column-2-4">
+                            <ul class="header-list">
+                                <li><a href="#" class="navigation-font">
+                                    <i class="far fa-newspaper"></i> NEWS
+                                </a></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="header-grid_column-2-4">
+                            <ul class="header-list">
+                                <li><a href="#" class="navigation-font">
+                                    <i class="fas fa-tags"></i> SALE
+                                </a></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="header-grid_column-2-4">
+                            <ul class="header-list">
+                                <li><a href="#" class="navigation-font">
+                                    <i class="fas fa-info-circle"></i> ABOUT
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Slideshow + Banner -->
+    <div id="wrapper-banner">
+        <div class="slideshow" >
+            <img class="mySlides" src="/images/Banner/Banner2.jpg" style="width:100%">
+            <img class="mySlides" src="/images/Banner/Banner3.jpg" style="width:100%">
+            <img class="mySlides" src="/images/Banner/Banner4.jpg" style="width:100%">
+            
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 3000); 
+            }
+        </script>
+    </div>
+
+    <!-- Group Banner -->
+    <div id="wrapper">
+        <div class="header-banner-grid">
+                <div class="grid_row">
+                    <div class="header-grid_column-2-5">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Banner/pc2.png" alt="" style="width:100%"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-grid_column-2-5">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Banner/pc3.png" alt="" style="width:100%"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-grid_column-2-5">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Banner/pc4.png" alt="" style="width:100%"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-grid_column-2-5">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Banner/pc2.png" alt="" style="width:100%"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <hr style="width:50%;margin-left:auto;margin-right:auto">
+    
+<!-- Extend Button + Icon Bar -->
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/khanh.quoc44/" class="facebook"><i class="fa fa-facebook"></i></a> 
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+        <a href="#" class="google"><i class="fa fa-google"></i></a> 
+    </div>
+    <button id="page_btn" title="Lên đầu trang" >
+        <i class="page_btn_icon fas fa-chevron-up"></i>
+    </button>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        document.getElementById("page_btn").style.display = "block";
+        } else {
+        document.getElementById("page_btn").style.display = "none";
+        }
+        }
+        
+        document.getElementById('page_btn').addEventListener("click", function(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        });
+    </script>
+    <div class="chat_btn" >
+        <a href="https://www.facebook.com/khanh.quoc44/" class="chat_btn_a">
+            <i class="chat_btn_icon fab fa-facebook-messenger"></i>
+        </a>
+    </div>
+    <!-- Hiển thị sản phẩm-->   
+    <div id="wrapper">
+        <div class="headline">
+            <h2>Laptop Gaming</h2>  
+        </div>
+        <div class="home">
+                <div class="home-banner">
+                    <a href="">
+                      <img class="home-banner-img" src="/images/Laptop/Component 38.png"></img>
+                    </a>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/Laptop/Laptop3.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             HOT
+                        </div> 
+                    <div class="home-products-sale">
+                         <span class="home-products-sale-percent">-5%</span>   
+                    </div>    
+                    </div>
+                        <div class="home-products-cat">Laptop</div>  
+                        <a href="">                    
+                            <h4 class="home-products-name">Laptop ACER Asphire 5 - 144Hz - I5</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-old-price">449$</span>
+                            <span class="home-products-price-new-price">399$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/Laptop/Laptop2.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             HOT
+                        </div> 
+                    <div class="home-products-sale">
+                         <span class="home-products-sale-percent">-15%</span>   
+                    </div>    
+                    </div>
+                        <div class="home-products-cat">Laptop</div>  
+                        <a href="">                    
+                            <h4 class="home-products-name">Laptop MSI gaming I5 - 120Hz </h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-old-price">685$</span>
+                            <span class="home-products-price-new-price">499$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/Laptop/Laptop1.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             HOT
+                        </div> 
+                    <div class="home-products-sale">
+                         <span class="home-products-sale-percent">-20%</span>   
+                    </div>    
+                    </div>
+                        <div class="home-products-cat">Laptop</div>  
+                        <a href="">                    
+                            <h4 class="home-products-name">Laptop AORUS gaming I9-9900k - 240Hz</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-old-price">799$</span>
+                            <span class="home-products-price-new-price">656$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/Laptop/Laptop5.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             HOT
+                        </div> 
+                    <div class="home-products-sale">
+                         <span class="home-products-sale-percent">-20%</span>   
+                    </div>    
+                    </div>
+                        <div class="home-products-cat">Laptop</div>  
+                        <a href="">                    
+                            <h4 class="home-products-name">Laptop DELL gaming I9-9900k</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-old-price">899$</span>
+                            <span class="home-products-price-new-price">799$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/Laptop/Laptop4.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             HOT
+                        </div> 
+                    <div class="home-products-sale">
+                         <span class="home-products-sale-percent">-20%</span>   
+                    </div>    
+                    </div>
+                        <div class="home-products-cat">Laptop</div>  
+                        <a href="">                    
+                            <h4 class="home-products-name">Laptop MSI gaming PRO I9-11100k - 240Hz</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-old-price">1100$</span>
+                            <span class="home-products-price-new-price">950$</span>
+                        </div>
+                </div>
+                </div> 
+            <div class="all-products">
+                <a href=""> See all products </a>
+            </div> 
+        </div>    
+
+    <hr style="width:50%;margin-left:auto;margin-right:auto">
+    <div id="wrapper">
+        <div class="headline">
+            <h2>Build Hi-end PC</h2>  
+        </div>
+        <div class="home">
+                <div class="home-banner">
+                    <a href="">
+                      <img class="home-banner-img" src="/images/PC/Component 39.png"></img>
+                    </a>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/PC/newPC1.jpg"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             HOT
+                        </div>
+                    <div class="home-products-sale">
+                        <span class="home-products-sale-percent">-15%</span>      
+                    </div>    
+                    </div>
+                        <div class="home-products-cat">PC</div>                    
+                        <a href="">
+                            <h4 class="home-products-name">AXE M - I3 10100F - GT730 - 8GB</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-old-price">380$</span>
+                            <span class="home-products-price-new-price">340$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/PC/newPC2.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             HOT
+                        </div>
+                    <div class="home-products-sale">
+                        <span class="home-products-sale-percent">-10%</span>      
+                    </div>    
+                    </div>
+                        <div class="home-products-cat">PC</div>                    
+                        <a href="">
+                            <h4 class="home-products-name">Titan M - G6405 - GT1030 - 8GB</h4>
+                        </a> 
+                        <div class="home-products-price">
+                            <span class="home-products-price-old-price">499$</span>
+                            <span class="home-products-price-new-price">450$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/PC/newPC3.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             HOT
+                        </div>
+                    <div class="home-products-sale">
+                        <span class="home-products-sale-percent">-14%</span>      
+                    </div>    
+                    </div>
+                        <div class="home-products-cat">PC</div>                    
+                        <a href="">
+                            <h4 class="home-products-name">Hextech S - I5 11400F - GTX 1650Ti - 16GB</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-old-price">1600$</span>
+                            <span class="home-products-price-new-price">1499$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/PC/newPC4.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             HOT
+                        </div>
+                    <div class="home-products-sale">
+                        <span class="home-products-sale-percent">-18%</span>      
+                    </div>    
+                    </div>
+                        <div class="home-products-cat">PC</div>                    
+                        <a href="">
+                            <h4 class="home-products-name">Phamtom S - I5 11400F - GTX 3060 - 16GB</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-old-price">1900$</span>
+                            <span class="home-products-price-new-price">1699$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/PC/newPC5.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             HOT
+                        </div>
+                    <div class="home-products-sale">
+                        <span class="home-products-sale-percent">-10%</span>      
+                    </div>    
+                    </div>
+                        <div class="home-products-cat">PC</div>                    
+                        <a href="">
+                            <h4 class="home-products-name">Garen S - I7 11700F - RTX 3070 - 16GB</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-old-price">2100$</span>
+                            <span class="home-products-price-new-price">1899$</span>
+                        </div>
+                </div>
+             </div>   
+            <div class="all-products">
+                <a href=""> See all products </a>
+            </div>    
+    </div>
+    <hr style="width:50%;margin-left:auto;margin-right:auto">
+    <div id="wrapper">
+        <div class="headline">
+            <h2>Monitor Gaming</h2>  
+        </div>
+        <div class="home">
+                <div class="home-banner">
+                    <a href="">
+                      <img class="home-banner-img" src="/images/Monitor/Component 37.png"></img>
+                    </a>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/Monitor/newmonitor1.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             HOT
+                        </div>
+                    <div class="home-products-sale">
+                        <span class="home-products-sale-percent">-20%</span>      
+                    </div>    
+                    </div>
+                        <div class="home-products-cat">Monitor</div>                    
+                        <a href="">
+                            <h4 class="home-products-name">Monitor Asus TUF Gaming VG34VQL1B VA/ WQHD/ 165HZ</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-old-price">480$</span>
+                            <span class="home-products-price-new-price">399$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/Monitor/newmonitor2.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             HOT
+                        </div>
+                    <div class="home-products-sale">
+                        <span class="home-products-sale-percent">-15%</span>      
+                    </div>    
+                    </div>
+                        <div class="home-products-cat">Monitor</div>                    
+                        <a href="">
+                            <h4 class="home-products-name">Monitor Gaming Viewsonic VX2882-4KP IPS/ UHD / 150Hz</h4>
+                        </a> 
+                        <div class="home-products-price">
+                            <span class="home-products-price-old-price">599$</span>
+                            <span class="home-products-price-new-price">450$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/Monitor/newmonitor3.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             HOT
+                        </div>
+                    <div class="home-products-sale">
+                        <span class="home-products-sale-percent">-14%</span>      
+                    </div>    
+                    </div>
+                        <div class="home-products-cat">Monitor</div>                    
+                        <a href="">
+                            <h4 class="home-products-name">Monitor Gaming MSI Optix MAG274QRF IPS/ WQHD/ 165HZ</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-old-price">1000$</span>
+                            <span class="home-products-price-new-price">799$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/Monitor/newmonitor4.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             HOT
+                        </div>
+                    <div class="home-products-sale">
+                        <span class="home-products-sale-percent">-18%</span>      
+                    </div>    
+                    </div>
+                        <div class="home-products-cat">Monitor</div>                    
+                        <a href="">
+                            <h4 class="home-products-name">Monitor Gaming LG 24GN600-B IPS/ FullHD/ 144Hz</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-old-price">1200$</span>
+                            <span class="home-products-price-new-price">999$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/Monitor/newmonitor5.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             HOT
+                        </div>
+                    <div class="home-products-sale">
+                        <span class="home-products-sale-percent">-12%</span>      
+                    </div>    
+                    </div>
+                        <div class="home-products-cat">Monitor</div>                    
+                        <a href="">
+                            <h4 class="home-products-name">Màn hình Gaming AOC 24G2E IPS/ FHD/ 144Hz</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-old-price">1500$</span>
+                            <span class="home-products-price-new-price">1399$</span>
+                        </div>
+                </div>
+             </div>   
+            <div class="all-products">
+                <a href=""> See all products </a>
+            </div>    
+    </div>
+    <hr style="width:50%;margin-left:auto;margin-right:auto">
+    <div id="wrapper">
+        <div class="headline">
+            <h2>Our New Products</h2>  
+        </div>
+        <div class="home">
+            <div class="home-products">
+                <div class="product-top">
+                    <a href="">
+                        <img class="home-products-img" src="/images/PC/newPC6.png"></img>
+                    </a>
+                    <a class="buy-now" href="">Buy Now</a>
+                    <div class="home-products-hot">
+                        <i class="fas fa-check"></i>
+                         NEW
+                    </div>   
+                </div>
+                    <div class="home-products-cat">PC</div>                    
+                    <a href="">
+                        <h4 class="home-products-name">Ratchet M - I5 11400F - GT2060 - 16GB</h4>
+                    </a>
+                    <div class="home-products-price">
+                        <span class="home-products-price-new-price">700$</span>
+                    </div>
+            </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/Monitor/newmonitor6.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             NEW
+                        </div>  
+                    </div>
+                        <div class="home-products-cat">Monitor</div>                    
+                        <a href="">
+                            <h4 class="home-products-name">Monitor Gaming Asus ROG STRIX XG27UQ IPS/ 4K/ 144Hz</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-new-price">500$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/Laptop/Laptop6.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             NEW
+                        </div> 
+                    </div>
+                        <div class="home-products-cat">PC</div>                    
+                        <a href="">
+                            <h4 class="home-products-name">Titan M - G6405 - GT1030 - 8GB</h4>
+                        </a> 
+                        <div class="home-products-price">
+                            <span class="home-products-price-new-price">450$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/PC/newPC8.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             NEW
+                        </div> 
+                    </div>
+                        <div class="home-products-cat">PC</div>                    
+                        <a href="">
+                            <h4 class="home-products-name">Volibear S - I8 11400F - GTX 1650Ti - 16GB</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-new-price">999$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/Laptop/Laptop7.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             NEW
+                        </div>    
+                    </div>
+                        <div class="home-products-cat">Laptop</div>                    
+                        <a href="">
+                            <h4 class="home-products-name">Laptop Asus X413JA 90NB0RC8 - I9 - 240hz - 16GB</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-new-price">1099$</span>
+                        </div>
+                </div>
+                <div class="home-products">
+                    <div class="product-top">
+                        <a href="">
+                            <img class="home-products-img" src="/images/Laptop/Laptop8.png"></img>
+                        </a>
+                        <a class="buy-now" href="">Buy Now</a>
+                        <div class="home-products-hot">
+                            <i class="fas fa-check"></i>
+                             NEW
+                        </div>   
+                    </div>
+                        <div class="home-products-cat">Laptop</div>                    
+                        <a href="">
+                            <h4 class="home-products-name">Laptop Asus Vivobook M513UA-L1240T - AMD Ryzen 7</h4>
+                        </a>
+                        <div class="home-products-price">
+                            <span class="home-products-price-new-price">1899$</span>
+                        </div>
+                </div>
+             </div>   
+            <div class="all-products">
+                <a href=""> See more </a>
+            </div>    
     </div>
     
-    <div class="banner">
-        <div class="banner1">
-            <a>
-                <img src="/images/Banner/Banner1.png" class="large_banner">
-            </a>
-        </div>
-        <div class="list_banner">
-            <a>
-                <img src="/images/Banner/pc.png" alt="" class="banner2">
-            </a>
-            <a>
-                <img src="/images/Banner/pc2.png" alt="" class="banner2">
-            </a> 
-            <a>
-                <img src="/images/Banner/pc3.png" alt="" class="banner2">
-            </a>  
-            <a>
-                <img src="/images/Banner/pc4.png" alt="" class="banner2">
-            </a> 
-        </div>
-    </div>
-    <!-- Hiển thị sản phẩm-->
-    <div id= "wrapper">
-        <div class="headline">
-            <h1>Hi-end PC</h1>  
-        </div>
-        <div class="banner-pc">
-            <a href="" class="banner-pc">
-                  <img src="/images/PC/Component 39.png" alt="">
-            </a>
-        </div>
-        <ul class="products">
-            <li>
-                <div class="banner-pc">
-                        <a href="" class="banner-pc">
-                              <img src="/images/PC/Component 39.png" alt="">
-                        </a>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 124.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">PC122</a>
-                        <a href="" class="product-name">PC MSI I9-9900</a>
-                        <div class="product-price">$500000</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 125.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 126.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 127.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 128.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="all-product">
-            <a href="" class="all-product">See all product</a>
-        </div>
-    </div>
-    <div id= "wrapper">
-        <div class="headline">
-            <h1>Hi-end PC</h1>  
-        </div>
-        <ul class="products">
-            <li>
-                <div class="banner-pc">
-                        <a href="" class="banner-PC">
-                              <img src="/images/PC/Component 39.png" alt="">
-                        </a>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 124.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">PC122</a>
-                        <a href="" class="product-name">PC MSI I9-9900</a>
-                        <div class="product-price">$500000</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 125.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 126.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 127.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 128.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="all-product">
-            <a href="" class="all-product">See all product</a>
-        </div>
-    </div>
-    <div id= "wrapper">
-        <div class="headline">
-            <h1>Hi-end PC</h1>  
-        </div>
-        <ul class="products">
-            <li>
-                <div class="banner-pc">
-                        <a href="" class="banner-PC">
-                              <img src="/images/PC/Component 39.png" alt="">
-                        </a>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 124.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">PC122</a>
-                        <a href="" class="product-name">PC MSI I9-9900</a>
-                        <div class="product-price">$500000</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 125.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 126.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 127.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 128.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="all-product">
-            <a href="" class="all-product">See all product</a>
-        </div>
-    </div>
-    <div id= "wrapper">
-        <div class="headline">
-            <h1>Hi-end PC</h1>  
-        </div>
-        <ul class="products">
-            <li>
-                <div class="banner-pc">
-                        <a href="" class="banner-PC">
-                              <img src="/images/PC/Component 39.png" alt="">
-                        </a>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 124.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">PC122</a>
-                        <a href="" class="product-name">PC MSI I9-9900</a>
-                        <div class="product-price">$500000</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 125.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 126.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 127.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-image">
-                            <img src="/images/PC/Frame 128.png" alt="">
-                        </a>
-                        <a class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product-cat">Laptop</a>
-                        <a href="" class="product-name">Laptop MSI</a>
-                        <div class="product-price">$500</div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="all-product">
-            <a href="" class="all-product">See all product</a>
-        </div>
-    </div>
-    <div class="footer">
-        <div>
-            <a> 
-                <img src="/images/Banner/footer.png" alt="">
-            </a>
-        </div>    
-    </div>   
 
-    <footer class="footer">
-        <div class="grid">
-            <div class="grid_row">
-                <div class="grid_column-5-5">
-                    <h3 class="footer_super_heading">Sign Up To Our Newsletter</h3>
-                    <ul class="footer-list">
-                        <li class="footer_super_heading2"><p>Be the first to hear about the latest offers.</p></li>
-                    </ul>
+    <!-- Group Logo -->
+    <br>
+    <div id="wrapper">
+        <div class="header-banner-grid">
+                <div class="grid_row">
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoAdata.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoGigabyte.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoHP.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoMsi.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoSynology.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoRoccat.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoThermaltake.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoRazer.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="grid_column-5-5">
-                    <div class ="footer_search_bar">
-                        <input type="text" class="search_text">
-                        <div class="button">
-                            <a href="#"  class="search_button">Subsribe</a>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div id="wrapper-footer">
+            <div class="grid">
+                <div class="grid_row">
+                    <div class="grid_column-5-5">
+                        <h3 class="footer_super_heading">Sign Up To Our Newsletter</h3>
+                        <ul class="footer-list">
+                            <li class="footer_super_heading2"><p>Be the first to hear about the latest offers.</p></li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-5-5">
+                        <div class ="footer_search_bar">
+                            <input type="text" placeholder="Your Email" class="search_text">
+                            <button style="border:none">Subscribe</button>
                         </div>
                     </div>
                 </div>
-            </div>
-            <br>
-            <div class="grid_row">
-                <div class="grid_column-2-4">
-                    <h3 class="footer_heading">Infomation</h3>
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">About Us</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">Privacy Policy</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">Terms</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">Contact Us</a>
-                        </li>
-                    </ul>
+                <br>
+                <div class="grid_row">
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Infomation</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">About Us</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Privacy Policy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Terms</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">PC Parts</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Add On Cards</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Hard Driver (Internal)</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Graphic Cards</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Desktop PCs</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Custom PCs</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Severs</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Tecs PCs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Laptops</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">MSI Series</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">DELL Series</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">MAC Series</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Address</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <p class="footer-address">Address: 273 An Duong Vuong Str, District 5, Ho Chi Minh City</p>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-address">Phone: <font color="#056ebe" >(078) 398 4721</font></p>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-address">We are open: Monday-Sunday: 9:00 AM - 5:30 PM</p>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-address">E-mail: <font color="#056ebe" >klkcomputer@gmail.com</font></p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="grid_column-2-4">
-                    <h3 class="footer_heading">PC Parts</h3>
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">Add On Cards</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">Hard Driver (Internal)</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">Graphic Cards</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grid_column-2-4">
-                    <h3 class="footer_heading">Desktop PCs</h3>
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">Custom PCs</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">Severs</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">Tecs PCs</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grid_column-2-4">
-                    <h3 class="footer_heading">Laptops</h3>
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">MSI Series</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">DELL Series</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">MAC Series</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grid_column-2-4">
-                    <h3 class="footer_heading">Address</h3>
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">Address: 273 An Duong Vuong Str, District 5, Ho Chi Minh City</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">Phones: (078) 398 4721</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">We are open: Monday-Sunday: 9:00 AM - 5:30 PM</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="" class="footer-item_link">E-mail: klkcomputer@gmail.com</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-            <hr width="100%">
-            <br>
-            <div class="grid_row">
-                <div class="grid_column-3-3-3">
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <a href="" class="footer-icon_link"> 
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a href="" class="footer-icon_link">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grid_column-3-3-3">
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <img src="/images/Logo/paypal.png" alt="">
-                            <img src="/images/Logo/visa.png" alt="">
-                            <img src="/images/Logo/maestro.png" alt="">
-                            <img src="/images/Logo/discover.png" alt="">
-                            <img src="/images/Logo/american-express.png" alt="">
-                        </li>
-                    </ul> 
-                </div>
-                <div class="grid_column-3-3-3">
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <p class="footer-copyright">Copyright © 2021 By KLK Computer</p>
-                        </li>
-                    </ul>
+                <br>
+                <hr width="100%">
+                <br>
+                <div class="grid_row">
+                    <div class="grid_column-3-3-3">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-icon_link"> 
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                <a href="" class="footer-icon_link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-3-3-3">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <div class="footer-paidcard">
+                                    <img src="/images/Logo/paypal.png" alt="">
+                                    <img src="/images/Logo/visa.png" alt="">
+                                    <img src="/images/Logo/maestro.png" alt="">
+                                    <img src="/images/Logo/discover.png" alt="">
+                                    <img src="/images/Logo/american-express.png" alt="">
+                                </div>                            
+                            </li>
+                        </ul> 
+                    </div>
+                    <div class="grid_column-3-3-3">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <p class="footer-copyright">Copyright © 2021 By KLK Computer</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
