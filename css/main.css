@@ -240,7 +240,7 @@
 
     .chat_btn {
         position: fixed;
-        bottom: 200px;
+        bottom: 100px;
         right: 6px;
         z-index: 9999;
         overflow: hidden;
@@ -251,10 +251,12 @@
         cursor: pointer;
 
     }
-
-    .chat_btn_icon {
-        color:rgb(250, 54, 54);
+    
+    .chat_btn_a_img {
+        width:90%;
+        margin:auto;
     }
+
     .navigation {
         margin: 0px 0 4px 0;
         background-color: rgb(250, 54, 54);
@@ -332,8 +334,14 @@
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
+
+    .dropdown-content-block {
+        transition: 0.5s;
+    }
+
     a.dropdown-content-block{
         display: block;
+        
     }
     .navigation .dropdown-content a {
         color: black;
@@ -537,6 +545,14 @@
         padding: 0px 10px;
         font-weight: 700;
         font-size: 90%;
+        text-decoration: none;
+        line-height:1.8rem;
+        height:3.6rem;
+        overflow:hidden;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
     }
     .home-products-price{
         display: flex;

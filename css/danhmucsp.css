@@ -15,6 +15,7 @@
     padding-left: 12px;
     padding-right: 12px;
     width: 16.6667%;
+    margin-top: 65px;
 }
 .grid--column--10{
     padding-left: 12px;
@@ -23,7 +24,7 @@
 }
 
 .category{
-    background-color: #F5F7FF;
+    background-color:  #EDF2FF;
     border-radius: 2px;
 }
 .category-heading{
@@ -42,11 +43,16 @@
 .category-items{
     text-decoration: none;
 }
-.category-item-active .category-item-link{
+.category-item-active a{
+    text-decoration: none;
+    position: relative;
+    font-size: 1.3rem;
+    color: black;
+    padding: 4px 16px;
+    display: block;
     color:rgb(250, 54, 54);
-
 }
-.category-item-active .category-item-link::before{
+/* .category-item-active .category-item-link::before{
     position:absolute;
     top:50%;
     left:4px;
@@ -55,17 +61,26 @@
     transform: translateY(-50%);
     border-color: transparent transparent transparent rgb(250, 54, 54);
     
-}
+} */
+/* .category-item-active:hover{
+    position:absolute;
+    top:50%;
+    left:4px;
+    contain:"";
+    border: 4px solid;
+    transform: translateY(-50%);
+    border-color: transparent transparent transparent rgb(250, 54, 54);
+    
+} */
 .category-item-link{
     position: relative;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: black;
-    padding: 4px 16px;
+    padding: 4px 25px;
     display:block;
     transition: right linear 0.1s;
     right:0;
-
 }
 .category-item-link:hover{
     right: -4px;
@@ -86,14 +101,14 @@
     align-items:center;
     justify-content: center;
     line-height: 1.6rem;
-    color: white;
+    color: black;
 }
 .home-filter{
     display: flex;
     align-items: center;
     padding: 12px 22px;
     border-radius:2px;
-    background-color: #F5F7FF;
+    background-color:  #EDF2FF;
 
 }
 .home-filter-label {
@@ -104,8 +119,15 @@
 .home-filter-btn {
     min-width:90px;
     margin-right:12px;
+    background-color: white;
+}
+.btn:hover{
+    color: white;
+}
+.home-filter-btn:hover {
     background-color: rgb(250, 54, 54);
 }
+
 .home-filter-page{
     display: flex;
     align-items: center;
@@ -161,7 +183,7 @@
     top:1px;
 }
 .select-input:hover .select-input-list{
-    display: block !important;;
+    display: block !important;
 
 }
 .select-input-list{
@@ -240,7 +262,7 @@
     top:10px;
     color: white;
     background-color: rgb(250, 54, 54); 
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     padding-right: 4px;
     border-top-right-radius: 4px;

@@ -23,7 +23,6 @@
     text-decoration: none;
     color: black;
 }
-
 .news-breadcrumb-list li a:hover {
     color: #01447e;
     text-decoration: underline;
@@ -36,12 +35,11 @@
     width: 66.66%;
 }
 .grid_column-1-part-3{
-    padding-left: 5px;
+    padding-left: 20px;
     padding-right: 5px;
     width: 33.33%;
 }
 .news-grid_column-5-5{
-    
     padding: 1% 1%;
     width: 50%;
     position: relative;
@@ -129,5 +127,90 @@ ul.news-list li > .news-item > a.tag:before{
 }
 *, *::before, *::after {
     box-sizing: border-box;
+}
+
+/* Form */
+.background-form-news{
+    background-color: #F2F2F3;
+    border-radius: 6px;
+}
+.padding-form-news{
+    padding: 5% 5% 5% 5%;
+}
+.form-news-text{
+    font-weight:700;
+    font-size: 130%;
+    margin-left: 6.5%;
+}
+.form-news-content{
+    font-weight: bold;
+    text-align: justify;
+    font-size: 100%;
+}
+ul.style-form-news{
+    list-style: none;
+}
+li.padding-item{
+    padding-bottom: 5%;
+}
+li.padding-text{
+    padding-top: 0%;
+}
+li.padding-item > h4{
+    font-size: bold;
+}
+input.form-news-input{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 12px 12px;
+    border-color: red;
+}
+.form-news2-subcribe-button {
+    display:flex;
+    align-items:center;
+}
+.form-news2-subcribe-button a{
+    text-decoration:none;
+}
+
+.form-news2-subcribe-button a.button{
+    display:inline-block;
+    margin-top:2%; 
+    margin-right: 10%;
+    padding: 3%; 
+    font-size: 100%;
+    color:white;
+    text-decoration:none;
+    background-color: rgb(250, 54, 54);
+    border-top-right-radius: 4px;
+    border-bottom-left-radius:4px;
+    border-top-left-radius:4px;
+    border-bottom-right-radius:4px;
+    border:none;
+    cursor:pointer;
+    padding: 2.5% 40%;
+    margin-bottom: 5%;
+}
+.form-news2-subcribe-button a.button:hover{
+    background-color:#333;
+}
+.form-news2-subcribe-button button:hover{
+    background-color:#333;
+}
+a.tag:hover,
+a.title:hover{
+    color: rgb(114, 109, 109);
+}
+a.author:hover{
+    color:red;
+}
+.padding-form-news{
+    margin-top: 11%;
+}
+.checkbox-text{
+    text-align:justify;
+    font-size: 80%;
 }
 

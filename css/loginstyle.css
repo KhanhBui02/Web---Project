@@ -62,7 +62,7 @@ input.form-signin-input{
     border-radius: 4px;
     font-size: 1rem;
     padding: 12px 12px;
-    border-color: red;
+    border: 1px solid rgb(162, 166, 176);
 }
 
 .form-login2-to-signup-button {

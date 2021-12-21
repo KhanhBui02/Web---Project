@@ -95,7 +95,7 @@
                     <div class="grid_row">
                         <div class="header-grid_column-2-4">
                             <ul class="header-list">
-                                <li><a href="#" class="navigation-font header-list">
+                                <li><a href="/" class="navigation-font header-list">
                                     <i class="fas fa-home"></i> HOME
                                 </a></li>
                             </ul>
@@ -103,7 +103,7 @@
                         <div class="header-grid_column-2-4">
                             <ul class="header-list">
                                 <li class="dropdown">
-                                    <a href="javascript:void(0)" class="dropbtn navigation-font">
+                                    <a href="/Laptop.html" class="dropbtn navigation-font">
                                         <i class="fas fa-list"></i> PRODUCTS
                                     </a>
                                     <div class="dropdown-content">
@@ -118,7 +118,7 @@
                         </div>
                         <div class="header-grid_column-2-4">
                             <ul class="header-list">
-                                <li><a href="#" class="navigation-font">
+                                <li><a href="/news.html" class="navigation-font">
                                     <i class="far fa-newspaper"></i> NEWS
                                 </a></li>
                             </ul>
@@ -152,31 +152,61 @@
             <li class="breadcrumb-2">Shopping-Cart </li>
         </ul>
     </div>
-
-<!-- Content -->
-    <!-- Title -->
-    <div class="content">
-        <div id="wrapper_6"> 
-            <h2 class="title" id="shopping">Shopping-Cart</h2>
-            <div class="grid_row">
-            <div class="cart-title grid_column_1_6" >
-                <h4 class="title" id="item">Items</h4>
-            </div>
-            <div class="cart-title grid_column_2_6">
-                <h4 class="title"></h4>
-            </div>
-            <div class="cart-title grid_column_1_6">
-                <h4 class="title">Price</h4>
-            </div>
-            <div class="cart-title grid_column_1_6">
-                <h4 class="title">Quantity</h4>
-            </div>
-            <div class="cart-title grid_column_1_6">
-                <h4 class="title">Subtotal</h4>
+<!-- Extend Button + Icon Bar -->
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/khanh.quoc44/" class="facebook">
+            <i class="fa fa-facebook"></i></a> 
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+        <a href="#" class="google"><i class="fa fa-google"></i></a> 
+    </div>
+    <button id="page_btn" title="Lên đầu trang" >
+        <i class="page_btn_icon fas fa-chevron-up"></i>
+    </button>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        document.getElementById("page_btn").style.display = "block";
+        } else {
+        document.getElementById("page_btn").style.display = "none";
+        }
+        }
+        
+        document.getElementById('page_btn').addEventListener("click", function(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        });
+    </script>
+    <div class="chat_btn" >
+        <a href="https://www.facebook.com/khanh.quoc44/" class="chat_btn_a">
+            <img class="chat_btn_a_img" src="/images/Icon/facebook-messenger-3691247-3073767.png">
+        </a>
+    </div>
+    <!-- Content -->
+        <!-- Title -->
+        <div class="content">
+            <div id="wrapper_6"> 
+                <h2 class="title" id="shopping">Shopping-Cart</h2>
+                <div class="grid_row">
+                <div class="cart-title grid_column_1_6" >
+                    <h4 class="title" id="item">Items</h4>
+                </div>
+                <div class="cart-title grid_column_2_6">
+                    <h4 class="title"></h4>
+                </div>
+                <div class="cart-title grid_column_1_6">
+                    <h4 class="title">Price</h4>
+                </div>
+                <div class="cart-title grid_column_1_6">
+                    <h4 class="title">Quantity</h4>
+                </div>
+                <div class="cart-title grid_column_1_6">
+                    <h4 class="title">Subtotal</h4>
+                </div>
             </div>
         </div>
-    </div>
-    <hr style="width:80%;margin-left:auto;margin-right:auto">
+        <hr style="width:80%;margin-left:auto;margin-right:auto">
  <!-- Info Cart -->
     <div class="cart">
         <div id="wrapper_6"> 
