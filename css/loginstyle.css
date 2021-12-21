@@ -7,46 +7,23 @@
     padding: 0;
 }
 
-.breadcrumb {
-    margin: 0.5% 10%;    
-    padding-top: 3%;
-}
-
-.breadcrumb-list {
-    list-style: none;
-}
-
-.breadcrumb-list >li , .breadcrumb-list >li > a{
-    display:inline;
-    font-size: 120%;
-    text-decoration: none;
-    color: black;
-}
-
-.breadcrumb-list li + li :before {
-    padding: 12px;
-    color: black;
-    content: ">";
-}
-
-.breadcrumb-list li a:hover {
-    color: #01447e;
-    text-decoration: underline;
-}
 
 /* Form Login */
 .login-title{
     font-size: 230%;
     padding-top: 5%;
+    padding-bottom: 1%;
 }
 
 .background-form-login{
-    background-color: #F5F7FF;
+    background-color: #e2e7fb;
     height: 60vh;
+    border-radius: 6px;
 }
 
 .background-form-signup{
-    background-color: #F5F7FF;
+    background-color: #e2e7fb;
+    border-radius: 6px;
 }
 
 .padding-form-login{

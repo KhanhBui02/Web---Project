@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/danhmucsp.css">
+    <link rel="shortcut icon" href="/images/Icon/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KLK's Computers- Hi-end PC & Laptop</title>
+</head>
+<body>
+
+    <!-- Hiệu ứng tuyết rơi -->
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+      </div>
+      
+    <!-- Header with search -->
+    <div class="header_withsearch">
+            <div class="header_logo" >
+                <a href="/">
+                    <img src="/images/Logo/newlogo.png" alt="" class="header_logo_img">
+                </a>
+            </div>
+            <div class="header_search">
+                <input type="text" placeholder="Search" class="header_search_input"> 
+                <a href="" id="search_link">
+                    <i class="fas fa-desktop"></i>
+                    By name <i>|</i> 
+                </a> 
+                <a href="" id="search_link">
+                    <i class="far fa-copyright"></i>
+                    By category <i>|</i>
+                </a>
+                <a href="" id="search_link">
+                    <i class="far fa-money-bill-alt"></i>
+                    By price
+                </a>
+            </div>
+            <div class="header_search_btn">
+                <a href="#">
+                    <i class="header_search_btn_icon fas fa-search"></i>
+                </a>
+            </div>   
+            <div class="header_cart" >
+                <a href="#"><i data-count="3" class="header_cart_icon fas fa-shopping-cart"></i></a>
+                <p>Shopping-Cart</p>
+            </div>
+            <div class="header_account" >
+                <a href="/dangnhap.html"><i class="header_account_icon fas fa-user-circle"></i></a>
+                <p>Sign in / Sign up</p>
+            </div>
+            <div class="header_phone" >
+                <a href="#"><i class="header_phone_icon fas fa-phone"></i></a>
+                <p>(078)-3984721</p>
+            </div>
+    </div>
+
+    <!--Navigation -->
+
+    <div class="navigation">
+        <div id="wrapper-navigation">
+            <div class="header-grid">
+                    <div class="grid_row">
+                        <div class="header-grid_column-2-4">
+                            <ul class="header-list">
+                                <li><a href="#" class="navigation-font header-list">
+                                    <i class="fas fa-home"></i> HOME
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="header-grid_column-2-4">
+                            <ul class="header-list">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropbtn navigation-font">
+                                        <i class="fas fa-list"></i> PRODUCTS
+                                    </a>
+                                    <div class="dropdown-content">
+                                    <a class="dropdown-content-block" href="#">Hot Products</a>
+                                    <a href="#">Hi-end PC</a>
+                                    <a href="#">Laptop Gaming</a>
+                                    <a href="#">Minotor</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        <div class="header-grid_column-2-4">
+                            <ul class="header-list">
+                                <li><a href="#" class="navigation-font">
+                                    <i class="far fa-newspaper"></i> NEWS
+                                </a></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="header-grid_column-2-4">
+                            <ul class="header-list">
+                                <li><a href="#" class="navigation-font">
+                                    <i class="fas fa-tags"></i> SALE
+                                </a></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="header-grid_column-2-4">
+                            <ul class="header-list">
+                                <li><a href="#" class="navigation-font">
+                                    <i class="fas fa-info-circle"></i> ABOUT
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Slideshow + Banner -->
+    <div id="wrapper-banner">
+        <div class="slideshow" >
+            <img class="mySlides" src="/images/Banner/Banner2.jpg" style="width:100%">
+            <img class="mySlides" src="/images/Banner/Banner3.jpg" style="width:100%">
+            <img class="mySlides" src="/images/Banner/Banner4.jpg" style="width:100%">
+            
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 3000); 
+            }
+        </script>
+    </div>
+
+    <!-- Group Banner -->
+    <div id="wrapper">
+        <div class="header-banner-grid">
+                <div class="grid_row">
+                    <div class="header-grid_column-2-5">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Banner/pc.png" alt="" style="width:100%"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-grid_column-2-5">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Banner/pc3.png" alt="" style="width:100%"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-grid_column-2-5">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Banner/pc4.png" alt="" style="width:100%"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-grid_column-2-5">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Banner/pc2.png" alt="" style="width:100%"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <hr style="width:50%;margin-left:auto;margin-right:auto">
+    
+<!-- Extend Button + Icon Bar -->
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/khanh.quoc44/" class="facebook"><i class="fa fa-facebook"></i></a> 
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+        <a href="#" class="google"><i class="fa fa-google"></i></a> 
+    </div>
+    <button id="page_btn" title="Lên đầu trang" >
+        <i class="page_btn_icon fas fa-chevron-up"></i>
+    </button>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        document.getElementById("page_btn").style.display = "block";
+        } else {
+        document.getElementById("page_btn").style.display = "none";
+        }
+        }
+        
+        document.getElementById('page_btn').addEventListener("click", function(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        });
+    </script>
+    <div class="chat_btn" >
+        <a href="https://www.facebook.com/khanh.quoc44/" class="chat_btn_a">
+            <i class="chat_btn_icon fab fa-facebook-messenger"></i>
+        </a>
+    </div>
+    <!-- Hiển thị sản phẩm-->   
+    <div class="container">
+        <div class="grid">
+            <div class="grid--row">
+                <div class="grid--column--2">
+                    <nav class="category">
+                        <h3 class ="category-heading"><i class="fas fa-list"></i>Our Products</h3>
+                        <ul class="category-list">
+                            <li class="category-items">
+                                <a href="#" class="category-item-link">Laptop MSI</a>
+                            </li> 
+                            <li class="category-items">
+                                <a href="#" class="category-item-link">Laptop ASUS</a>
+                            </li>  
+                            <li class="category-items">
+                                <a href="#" class="category-item-link">Laptop DELL</a>
+                            </li>  
+                            <li class="category-items">
+                                <a href="#" class="category-item-link">Laptop ACER</a>
+                            </li>     
+                        </ul>    
+                    </nav>
+                </div>  
+                <div class="grid--column--10">
+                    <div class="home-filter">
+                        <span class="home-filter-label">Sort by:</span>
+                        <button class="home-filter-btn btn">Popular</button>
+                        <button class="home-filter-btn btn">Best Saler</button>  
+                        <button class="home-filter-btn btn">New</button>   
+                        <button class="home-filter-btn btn">Price</button>  
+                        <!-- <div class="select-input">
+                            <span class="select-input-label">Price</span>
+                            <i class="select-input-icon fas fa-angle-down"></i>
+                            <ul class="select-input-list">
+                                <li class="select-input-item">
+                                    <a href="#" class="select-input-link">Low To high</a>
+                                </li>
+                                <li class="select-input-item">
+                                    <a href="#" class="select-input-link">High To Low</a>
+                                </li>
+                            </ul>
+                        </div>    -->
+                        <div class="home-filter-page">
+                            <span class="home-filter-page-num">
+                                <span class="home-filter-page-num-current">1</span>/14
+                            </span>
+                        </div>    
+                        <div class="home-filter-control">
+                            <a class="home-filter-page-btn" href="#">
+                                <i class="home-filter-page-icon fas fa-angle-left"></i>
+                            </a>
+                            <a class="home-filter-page-btn" href="#">
+                                <i class="home-filter-page-icon fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home-all-products">
+                        <div class="grid--row">
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop1.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             HOT
+                                        </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop Aorus Eagle AN515-57-71VV i7-11800H/ 8GB/</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-new-price">399$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop2.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             HOT
+                                        </div>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-5%</span>   
+                                       </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop Gaming MSI GF63 Thin 10SCXR i5 10200H / 8GB /aaaa</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">449$</span>
+                                        <span class="home-all-products-price-new-price">420$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop3.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <!-- <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             HOT
+                                        </div>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-5%</span>   
+                                       </div> -->
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop ACER Aspire  5</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <!-- <span class="home-all-products-price-old-price">449$</span> -->
+                                        <span class="home-all-products-price-new-price">399$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop4.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             HOT
+                                        </div>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-15%</span>   
+                                       </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop ASUS G65 10UE 286VN Core i5-10500H/ 16GB/</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">649$</span>
+                                        <span class="home-all-products-price-new-price">599$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop5.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             NEW
+                                        </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop Gaming Dell Alienware m15 - R6 - 01NS i7-</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-new-price">799$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop6.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             NEW
+                                        </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop Gaming Dell Alienware m15 - R6 - 01NS i7-black</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-new-price">799$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop7.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             HOT
+                                        </div>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-10%</span>   
+                                       </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">LAPTOP LENOVO LEGION 5 PRO 16ITH6H </h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">2100$</span>
+                                        <span class="home-all-products-price-new-price">2000$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop8.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             NEW
+                                        </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">LAPTOP MSI GAMING GS66 STEALTH (11UG-210VN)</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-new-price">1199$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop10.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             HOT
+                                        </div>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-15%</span>   
+                                       </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop ACER Aspire  5 - I5 - 144hz</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">899$</span>
+                                        <span class="home-all-products-price-new-price">799$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop10.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             NEW
+                                        </div>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-5%</span>   
+                                       </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop ACER Aspire  5 - I5 - 144hz - grey</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">899$</span>
+                                        <span class="home-all-products-price-new-price">799$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop11.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             NEW
+                                        </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop Gaming Acer Nitro 5 EagleV i5 8GB</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-new-price">799$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop12.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             HOT
+                                        </div>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-12%</span>   
+                                       </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop Gaming ASUS TUF F15 i5</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">749$</span>
+                                        <span class="home-all-products-price-new-price">673$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop13.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop Asus ROG Strix G15 R7 4800H 8GB</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-new-price">699$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop14.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             NEW
+                                        </div>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-10%</span>   
+                                       </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop Acer Gaming Nitro 5 2021 Ryzen 5-5600H</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">849$</span>
+                                        <span class="home-all-products-price-new-price">799$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop15.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">LAPTOP ASUS ROG Zephyrus G14 R9-5900HS</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-new-price">999$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop16.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             HOT
+                                        </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop Acer Predator Triton 300</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-new-price">1599$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop17.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             NEW
+                                        </div>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-15%</span>   
+                                       </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop Gaming Asus ROG Strix SCAR 15 R9</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">1449$</span>
+                                        <span class="home-all-products-price-new-price">1399$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop18.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             HOT
+                                        </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop MSI Strix SCAR GF65 Thin 10UE i7</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-new-price">1799$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop19.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             HOT
+                                        </div>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-20%</span>   
+                                       </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">LAPTOP ACER PREDATOR HELIOS 300 I7</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">2449$</span>
+                                        <span class="home-all-products-price-new-price">2199$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="/images/Laptop/Laptop20.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="">Buy Now</a>
+                                        <div class="home-all-products-hot">
+                                            <i class="fas fa-check"></i>
+                                             HOT
+                                        </div>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-6%</span>   
+                                       </div>
+                                    </div>     
+                                    <div class="home-all-products-cat">Laptop</div>  
+                                    <a href="">                    
+                                        <h4 class="home-all-products-name">Laptop MSI Prestige 14 - Rose Pink</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">3449$</span>
+                                        <span class="home-all-products-price-new-price">3399$</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>   
+        </div>    
+    </div>    
+
+
+
+    
+
+    <!-- Group Logo -->
+    <br>
+    <div id="wrapper">
+        <div class="header-banner-grid">
+                <div class="grid_row">
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoAdata.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoGigabyte.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoHP.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoMsi.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoSynology.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoRoccat.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoThermaltake.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo-grid_column-8-part">
+                        <ul class="header-list">
+                            <li>
+                                <div class="item-banner">
+                                    <a href=""><img src="/images/Logo/logoRazer.png" alt="" class="img-logo"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div id="wrapper-footer">
+            <div class="grid">
+                <div class="grid_row">
+                    <div class="grid_column-5-5">
+                        <h3 class="footer_super_heading">Sign Up To Our Newsletter</h3>
+                        <ul class="footer-list">
+                            <li class="footer_super_heading2"><p>Be the first to hear about the latest offers.</p></li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-5-5">
+                        <div class ="footer_search_bar">
+                            <input type="text" placeholder="Your Email" class="search_text">
+                            <button style="border:none">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="grid_row">
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Infomation</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">About Us</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Privacy Policy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Terms</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">PC Parts</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Add On Cards</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Hard Driver (Internal)</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Graphic Cards</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Desktop PCs</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Custom PCs</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Severs</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Tecs PCs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Laptops</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">MSI Series</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">DELL Series</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">MAC Series</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Address</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <p class="footer-address">Address: 273 An Duong Vuong Str, District 5, Ho Chi Minh City</p>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-address">Phone: <font color="#056ebe" >(078) 398 4721</font></p>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-address">We are open: Monday-Sunday: 9:00 AM - 5:30 PM</p>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-address">E-mail: <font color="#056ebe" >klkcomputer@gmail.com</font></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <hr width="100%">
+                <br>
+                <div class="grid_row">
+                    <div class="grid_column-3-3-3">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-icon_link"> 
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                <a href="" class="footer-icon_link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-3-3-3">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <div class="footer-paidcard">
+                                    <img src="/images/Logo/paypal.png" alt="">
+                                    <img src="/images/Logo/visa.png" alt="">
+                                    <img src="/images/Logo/maestro.png" alt="">
+                                    <img src="/images/Logo/discover.png" alt="">
+                                    <img src="/images/Logo/american-express.png" alt="">
+                                </div>                            
+                            </li>
+                        </ul> 
+                    </div>
+                    <div class="grid_column-3-3-3">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <p class="footer-copyright">Copyright © 2021 By KLK Computer</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
