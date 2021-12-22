@@ -39,7 +39,7 @@ function validatesignup(){
     return true;
 }
 
-function showbill(){
+function show(){
     var f = document.getElementById("fill");
     if(f.style.display === "none"){
         f.style.display = "flex"

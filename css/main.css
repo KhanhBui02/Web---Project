@@ -24,14 +24,19 @@
     }
 
     .breadcrumb-list li.breadcrumb-1, 
-    .breadcrumb-list li.breadcrumb-2 , 
+    .breadcrumb-list li.breadcrumb-2, 
     .breadcrumb-list li a{
         display:inline;
         font-size: 130%;
         text-decoration: none;
         color: black;
     }
-
+    .breadcrumb-list li.breadcrumb-2 > a{
+        display:inline;
+        font-size: 110%;
+        text-decoration: none;
+        color: black;
+    }
     .breadcrumb-list li.breadcrumb-3{
         display:inline;
         font-size: 100%;

@@ -1,5 +1,5 @@
 
-.grid{
+.grid-1{
     width:80%;
     max-width: 100%;
     margin: 0 auto;
@@ -335,4 +335,7 @@
     margin-left:4px;
     font-weight: 700;
 
+}
+.product-details-banner{
+    padding-top: 3%;
 }

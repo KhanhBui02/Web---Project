@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="shortcut icon" href="/images/Icon/favicon.ico">
+    <script>
+        window.onload = function() {
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            title: {
+                text: "REVENUE OF THE DAY"
+            },
+            axisX: {
+                title: "Time"
+            },
+            axisY: {
+                title: "Percentage",
+                suffix: "%",
+                includeZero: true
+            },
+            data: [{
+                type: "line",
+                name: "CPU Utilization",
+                connectNullData: true,
+                //nullDataLineDashType: "solid",
+                xValueType: "dateTime",
+                xValueFormatString: "DD MMM hh:mm TT",
+                yValueFormatString: "#,##0.##\"%\"",
+                dataPoints: [
+                    { x: 1501048673000, y: 35.939 },
+                    { x: 1501052273000, y: 40.896 },
+                    { x: 1501055873000, y: 56.625 },
+                    { x: 1501059473000, y: 26.003 },
+                    { x: 1501063073000, y: 20.376 },
+                    { x: 1501066673000, y: 19.774 },
+                    { x: 1501070273000, y: 23.508 },
+                    { x: 1501073873000, y: 18.577 },
+                    { x: 1501077473000, y: 15.918 },
+                    { x: 1501081073000, y: null }, // Null Data
+                    { x: 1501084673000, y: 10.314 },
+                    { x: 1501088273000, y: 10.574 },
+                    { x: 1501091873000, y: 14.422 },
+                    { x: 1501095473000, y: 18.576 },
+                    { x: 1501099073000, y: 22.342 },
+                    { x: 1501102673000, y: 22.836 },
+                    { x: 1501106273000, y: 23.220 },
+                    { x: 1501109873000, y: 23.594 },
+                    { x: 1501113473000, y: 24.596 },
+                    { x: 1501117073000, y: 31.947 },
+                    { x: 1501120673000, y: 31.142 }
+                ]
+            }]
+        });
+        chart.render();
+        
+        }
+        </script>
+    <script language="javascript" src="admin.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KLK's Computers- Hi-end PC & Laptop</title>
+</head>
+<body>   
+    <!-- Header with search -->
+        <!-- Navbar -->
+        <div class="navbar">
+            <ul class="navbar-nav navbar-nav-left">
+                <li class="nav-item1">
+                    <a class="nav-link" onclick="collapseSidebar()">
+                        <i class="fas fa-bars" ></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/"class="nav-link">
+                        <img src="/images/Logo/newlogo.png" alt="klkcomputer" class="logo">
+                    </a>
+                </li>
+            </ul>
+            <form action="" class="navbar-search">
+                <input type="text" name="search" class="navbar-search-input" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </form>
+            <ul class="navbar-nav nav-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" >
+                        <i class="fas fa-bell dropdown-toggle" data-toggle="notification-menu"></i>
+                        <span class="navbar-badge" >6</span>
+                    </a>
+                    <ul id="notification-menu" class="dropdown-menu notification-menu" >
+                        <div class="dropdown-menu-header">
+                            <span>
+                                Notifications
+                            </span>
+                        </div>
+                        <div class="dropdown-menu-content">
+                            <li class="dropdown-menu-item">
+                                <a href="#" class="dropdown-menu-link">
+                                    <div>
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                    <span>
+                                        New product has been added.
+                                        <br>
+                                        <span>
+                                            01/12/2021
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#" class="dropdown-menu-link">
+                                    <div>
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                    <span>
+                                        New product has been added.
+                                        <br>
+                                        <span>
+                                            01/12/2021
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#" class="dropdown-menu-link">
+                                    <div>
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                    <span>
+                                        New product has been added.
+                                        <br>
+                                        <span>
+                                            01/12/2021
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#" class="dropdown-menu-link">
+                                    <div>
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                    <span>
+                                        New product has been added.
+                                        <br>
+                                        <span>
+                                            01/12/2021
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#" class="dropdown-menu-link">
+                                    <div>
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                    <span>
+                                        New product has been added.
+                                        <br>
+                                        <span>
+                                            01/12/2021
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="dropdown-menu-footer">
+                            <span>
+                                View all notifications
+                            </span>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="avt dropdown">
+                        <img src="/images/About/Buukhanh.jpg" alt="User image" class="dropdown-toggle" data-toggle="user-menu">
+                        <ul class="dropdown-menu" id="user-menu">
+                            <li class="dropdown-menu-item">
+                                <a href="#" class="dropdown-menu-link">
+                                    <div>
+                                        <i class="fas fa-user-alt"></i>
+                                    </div>
+                                    <span>
+                                        Profile
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#" class="dropdown-menu-link">
+                                    <div>
+                                        <i class="fas fa-cog"></i>
+                                    </div>
+                                    <span>
+                                        Setting
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#" class="dropdown-menu-link">
+                                    <div>
+                                        <i class="far fa-credit-card"></i>
+                                    </div>
+                                    <span>
+                                        Payments
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#" class="dropdown-menu-link">
+                                    <div>
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </div>
+                                    <span>
+                                        Log-out
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- End Navbar -->
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <li class="sidebar-nav-item">
+                    <a href="#" class="sidebar-nav-link">
+                        <div>
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <span>Admin Information</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#" class="sidebar-nav-link">
+                        <div>
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <span>Employee Manage</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#" class="sidebar-nav-link active">
+                        <div>
+                            <i class="fas fa-chart-bar "></i>
+                        </div>
+                        <span>Reports</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#" class="sidebar-nav-link">
+                        <div>
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <span>Account Setting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+                   
+    <!-- Grid column -->
+    <div class="wrapper sidebar-expand">
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <br>
+        <h2>Products Manager</h2>
+        <div class="table_product">
+            <table>
+                <tr>
+                  <th>Items</th>
+                  <th>Name Product</th>
+                  <th>Price</th>
+                  <th>Date Add</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+                </tr>
+                <tr>
+                  <td >
+                      <div>
+                          <img src="/images/Laptop/Laptop1.png" alt="">
+                      </div>
+                  </td>
+                  <td class="product-name">
+                    Laptop ACER Aspire 5
+                  </td>
+                  <td>$656</td>
+                  <td>01/12/2021</td>
+                  <td>
+                    <span class="input-btn">
+                        <i class="fas fa-pen-square" ></i>  Edit 
+                    </span>
+                  </td>
+                  <td>
+                    <span class="input-btn">
+                        <i class="fas fa-times-circle"></i>  Delete
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="/images/Laptop/Laptop1.png" alt="">
+                        </div>
+                    </td>
+                    <td class="product-name">
+                        Laptop ACER Aspire 5
+                      </td>
+                    <td>$656</td>
+                    <td>01/12/2021</td>
+                    <td>
+                      <span class="input-btn">
+                        <i class="fas fa-pen-square"></i>  Edit
+                      </span>
+                    </td>
+                    <td>
+                      <span class="input-btn">
+                        <i class="fas fa-times-circle" ></i>  Delete
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <div>
+                            <img src="/images/Laptop/Laptop1.png" alt="">
+                        </div>
+                    </td>
+                    <td class="product-name">
+                        Laptop ACER Aspire 5
+                      </td>
+                    <td>$656</td>
+                    <td>01/12/2021</td>
+                    <td>
+                      <span class="input-btn">
+                        <i class="fas fa-pen-square"></i>  Edit
+                      </span>
+                    </td>
+                    <td>
+                      <span class="input-btn">
+                        <i class="fas fa-times-circle"></i>  Delete
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <div>
+                            <img src="/images/Laptop/Laptop1.png" alt="">
+                        </div>
+                    </td>
+                    <td class="product-name">
+                        Laptop ACER Aspire 5
+                      </td>
+                    <td>$656</td>
+                    <td>01/12/2021</td>
+                    <td>
+                      <span class="input-btn">
+                        <i class="fas fa-pen-square" ></i>  Edit
+                      </span>
+                    </td>
+                    <td>
+                      <span class="input-btn">
+                        <i class="fas fa-pen-square"></i>  Delete
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td >
+                       <a href="#">
+                        <span class="input_img" >
+                            <i class="fas fa-plus-square"></i>
+                        </span>
+                       </a>
+                    </td>
+                    <td>
+                        <input type="text" name="input_name" class="input_name">
+                    </td>
+                    <td>
+                        <input type="text" name="input_price" class="input_price">
+                    </td>
+                    <td>
+                        <input type="text" name="input_date" class="input_date">
+                    </td>
+                    <td>
+                      <span class="input-btn">
+                        <i class="fas fa-pen-square" ></i>  Edit
+                      </span>
+                    </td>
+                    <td>
+                      <span class="input-btn">
+                        <i class="fas fa-pen-square" ></i> Delete
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                       <td colspan="6" >
+                        <button class="end-btn" >SAVE OPTIONS</button>
+                        <button class="end-btn">CLEAR ALL PRODUCTS</button>
+                       </td>
+                  </tr>
+              </table>
+        </div>
+    </div> 
+
+</body>
+</html>
