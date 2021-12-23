@@ -144,6 +144,36 @@
             </div>
         </div>
     </div>
+    <!-- Extend Button + Icon Bar -->
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/khanh.quoc44/" class="facebook"><i class="fa fa-facebook"></i></a> 
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+        <a href="#" class="google"><i class="fa fa-google"></i></a> 
+    </div>
+    <button id="page_btn" title="Lên đầu trang" >
+        <i class="page_btn_icon fas fa-chevron-up"></i>
+    </button>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        document.getElementById("page_btn").style.display = "block";
+        } else {
+        document.getElementById("page_btn").style.display = "none";
+        }
+        }
+        
+        document.getElementById('page_btn').addEventListener("click", function(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        });
+    </script>
+    <div class="chat_btn" >
+        <a href="https://www.facebook.com/khanh.quoc44/" class="chat_btn_a">
+            <img class="chat_btn_a_img" src="/images/Icon/facebook-messenger-3691247-3073767.png">
+        </a>
+    </div>
 
 <!-- Breadcrum -->
 <div class="breadcrumb">
@@ -486,7 +516,7 @@
                         <h3 class="footer_heading">Infomation</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
-                                <a href="" class="footer-item_link">About Us</a>
+                                <a href="/aboutus.html" class="footer-item_link">About Us</a>
                             </li>
                             <li class="footer-item">
                                 <a href="" class="footer-item_link">Privacy Policy</a>
