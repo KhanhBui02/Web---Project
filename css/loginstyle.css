@@ -17,7 +17,7 @@
 
 .background-form-login{
     background-color: #e2e7fb;
-    height: 60vh;
+    height: 55vh;
     border-radius: 6px;
 }
 
@@ -28,6 +28,9 @@
 
 .padding-form-login{
     padding: 5% 5% 5% 5%;
+}
+.padding-form-login2{
+    padding: 5% 5% 8.8% 5%;
 }
 ul.style-form-login{
     list-style: none;

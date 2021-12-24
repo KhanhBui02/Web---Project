@@ -63,7 +63,7 @@
         height:120px;
         display: flex;
         align-items:center;
-        background: url(/images/Banner/ChrismartBanner.jpg);
+        background: url(../images/Banner/ChrismartBanner.jpg);
     }
 
     .header_search {
