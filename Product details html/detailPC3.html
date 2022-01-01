@@ -1,91 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/chitietsp.css">
+    <link rel="stylesheet" href="../css/fliter.css">
+    <script language="javascript" src="../Javascript/fliter.js"></script>
+    <script language="javascript" src="../Javascript/login.js"></script>
     <link rel="shortcut icon" href="../images/Icon/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>KLK's Computers- Hi-end PC & Laptop</title>
 </head>
-<body>
+
+<body onload="logined()">
 
     <!-- Hiệu ứng tuyết rơi -->
     <div class="snowflakes" aria-hidden="true">
         <div class="snowflake">
-        ❅
+            ❅
         </div>
         <div class="snowflake">
-        ❅
+            ❅
         </div>
         <div class="snowflake">
-        ❆
+            ❆
         </div>
         <div class="snowflake">
-        ❄
+            ❄
         </div>
         <div class="snowflake">
-        ❅
+            ❅
         </div>
         <div class="snowflake">
-        ❆
+            ❆
         </div>
         <div class="snowflake">
-        ❄
+            ❄
         </div>
         <div class="snowflake">
-        ❅
+            ❅
         </div>
         <div class="snowflake">
-        ❆
+            ❆
         </div>
         <div class="snowflake">
-        ❄
+            ❄
         </div>
-      </div>
-      
+    </div>
+
     <!-- Header with search -->
     <div class="header_withsearch">
-            <div class="header_logo" >
-                <a href="../index.html">
-                    <img src="../images/Logo/newlogo.png" alt="" class="header_logo_img">
-                </a>
+        <div class="header_logo">
+            <a href="../index.html">
+                <img src="../images/Logo/newlogo.png" alt="" class="header_logo_img">
+            </a>
+        </div>
+        <div class="header_search">
+            <!-- <input type="text" placeholder="Search" class="header_search_input">  -->
+            <div class="fliter-dropdown">
+                <div id="myDropdown" class="fliter-dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="../Sale.html">
+                        <i class="fas fa-list"></i> Hot Products
+                    </a>
+                    <a href="../PC.html">
+                        <i class="fas fa-list"></i> Hi-end PC
+                    </a>
+                    <a href="../Laptop.html">
+                        <i class="fas fa-list"></i> Laptop Gaming
+                    </a>
+                    <a href="../Monitor.html">
+                        <i class="fas fa-list"></i> Monitor
+                    </a>
+
+                    <a href="../Product details html/detailLap3.html">
+                        <i class="fas fa-laptop"></i> ASUS TUF Dash F15
+                    </a>
+                    <a href="../chitietsanpham.html">
+                        <i class="fas fa-laptop"></i> Laptop ACER Aspire 5
+                    </a>
+                    <a href="../Product details html/detailLap2.html">
+                        <i class="fas fa-laptop"></i> Lenovo IdeaPad Gaming 3
+                    </a>
+                    <a href="../Product details html/detailLap1.html">
+                        <i class="fas fa-laptop"></i> Lenovo Legion 5
+                    </a>
+
+                    <a href="../Product details html/detailPC3.html">
+                        <i class="fas fa-mobile"></i> Alienware Aurora R12
+                    </a>
+                    <a href="../Product details html/detailPC2.html">
+                        <i class="fas fa-mobile"></i> CyberPowerPC Infinity X109 Gaming PC
+                    </a>
+                    <a href="../Product details html/detailPC1.html">
+                        <i class="fas fa-mobile"></i> HP Omen i5 10400F RTX 2060
+                    </a>
+                </div>
             </div>
-            <div class="header_search">
-                <input type="text" placeholder="Search" class="header_search_input"> 
+
+            <!-- <a href="" id="search_link">
+                    <i class="fas fa-desktop"></i> By name <i>|</i>
+                </a>
                 <a href="" id="search_link">
-                    <i class="fas fa-desktop"></i>
-                    By name <i>|</i> 
-                </a> 
-                <a href="" id="search_link">
-                    <i class="far fa-copyright"></i>
-                    By category <i>|</i>
+                    <i class="far fa-copyright"></i> By category <i>|</i>
                 </a>
                 <a href="" id="search_link">
-                    <i class="far fa-money-bill-alt"></i>
-                    By price
-                </a>
-            </div>
-            <div class="header_search_btn">
-                <a href="#">
-                    <i class="header_search_btn_icon fas fa-search"></i>
-                </a>
-            </div>   
-            <div class="header_cart" >
-                <a href="../giohang.html"><i data-count="3" class="header_cart_icon fas fa-shopping-cart"></i></a>
-                <p>Shopping-Cart</p>
-            </div>
-            <div class="header_account" >
-                <a href="../dangnhap.html"><i class="header_account_icon fas fa-user-circle"></i></a>
-                <p>Sign in / Sign up</p>
-            </div>
-            <div class="header_phone" >
-                <a href="#"><i class="header_phone_icon fas fa-phone"></i></a>
-                <p>(078)-3984721</p>
-            </div>
+                    <i class="far fa-money-bill-alt"></i> By price
+                </a> -->
+        </div>
+        <div class="header_search_btn">
+            <a href="#">
+                <i class="header_search_btn_icon fas fa-search"></i>
+            </a>
+        </div>
+        <div class="header_cart">
+            <a href="#" onclick="return showDialogCart()"><i class="header_cart_icon fas fa-shopping-cart"><span class="number_cart">0</span></i></a>
+            <p>Shopping-Cart</p>
+        </div>
+        <div class="header_account">
+            <a href="../dangnhap.html"><i class="header_account_icon fas fa-user-circle"></i></a>
+            <p>Sign in / Sign up</p>
+        </div>
+        <div class="header_phone">
+            <a href="#"><i class="header_phone_icon fas fa-phone"></i></a>
+            <p>(078)-3984721</p>
+        </div>
     </div>
 
     <!--Navigation -->
@@ -93,223 +136,240 @@
     <div class="navigation">
         <div id="wrapper-navigation">
             <div class="header-grid">
-                    <div class="grid_row">
-                        <div class="header-grid_column-2-4">
-                            <ul class="header-list">
-                                <li><a href="../index.html" class="navigation-font header-list">
+                <div class="grid_row">
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li>
+                                <a href="../index.html" class="navigation-font header-list">
                                     <i class="fas fa-home"></i> HOME
-                                </a></li>
-                            </ul>
-                        </div>
-                        <div class="header-grid_column-2-4">
-                            <ul class="header-list">
-                                <li class="dropdown">
-                                    <a href="../Laptop.html" class="dropbtn navigation-font">
-                                        <i class="fas fa-list"></i> PRODUCTS
-                                    </a>
-                                    <div class="dropdown-content">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li class="dropdown">
+                                <a href="../Laptop.html" class="dropbtn navigation-font">
+                                    <i class="fas fa-list"></i> PRODUCTS
+                                </a>
+                                <div class="dropdown-content">
                                     <a class="dropdown-content-block" href="../Sale.html">Hot Products</a>
                                     <a href="../PC.html">Hi-end PC</a>
                                     <a href="../Laptop.html">Laptop Gaming</a>
                                     <a href="../Monitor.html">Minotor</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            
-                        </div>
-                        <div class="header-grid_column-2-4">
-                            <ul class="header-list">
-                                <li><a href="../news.html" class="navigation-font">
-                                    <i class="far fa-newspaper"></i> NEWS
-                                </a></li>
-                            </ul>
-                            
-                        </div>
-                        <div class="header-grid_column-2-4">
-                            <ul class="header-list">
-                                <li><a href="../Sale.html" class="navigation-font">
-                                    <i class="fas fa-tags"></i> SALE
-                                </a></li>
-                            </ul>
-                            
-                        </div>
-                        <div class="header-grid_column-2-4">
-                            <ul class="header-list">
-                                <li><a href="../aboutus.html" class="navigation-font">
-                                    <i class="fas fa-info-circle"></i> ABOUT
-                                </a></li>
-                            </ul>
-                        </div>
+                                </div>
+                            </li>
+                        </ul>
+
                     </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li>
+                                <a href="../news.html" class="navigation-font">
+                                    <i class="far fa-newspaper"></i> NEWS
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li>
+                                <a href="../Sale.html" class="navigation-font">
+                                    <i class="fas fa-tags"></i> SALE
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li class="dropdown">
+                                <a href="Laptop.html" class="dropbtn navigation-font">
+                                    <i class="fas fa-info-circle"></i> CONTACT
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="contactus.html">Contact Info</a>
+                                    <a href="aboutus.html">About Us</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- Extend Button + Icon Bar -->
     <div class="icon-bar">
-        <a href="https://www.facebook.com/khanh.quoc44/" class="facebook"><i class="fa fa-facebook"></i></a> 
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
-        <a href="#" class="google"><i class="fa fa-google"></i></a> 
+        <a href="https://www.facebook.com/khanh.quoc44/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fa fa-google"></i></a>
     </div>
-    <button id="page_btn" title="Lên đầu trang" >
+    <button id="page_btn" title="Lên đầu trang">
         <i class="page_btn_icon fas fa-chevron-up"></i>
     </button>
     <script>
-        window.onscroll = function() {scrollFunction()};
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
         function scrollFunction() {
-        
-        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-        document.getElementById("page_btn").style.display = "block";
-        } else {
-        document.getElementById("page_btn").style.display = "none";
+
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                document.getElementById("page_btn").style.display = "block";
+            } else {
+                document.getElementById("page_btn").style.display = "none";
+            }
         }
-        }
-        
-        document.getElementById('page_btn').addEventListener("click", function(){
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+
+        document.getElementById('page_btn').addEventListener("click", function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         });
     </script>
-    <div class="chat_btn" >
+    <div class="chat_btn">
         <a href="https://www.facebook.com/khanh.quoc44/" class="chat_btn_a">
             <img class="chat_btn_a_img" src="/images/Icon/facebook-messenger-3691247-3073767.png">
         </a>
     </div>
 
-<!-- Breadcrum -->
-<div class="breadcrumb">
-    <ul class="breadcrumb-list">
-        <li class="breadcrumb-1">
-            <a href="../index.html" >Home</a><span> ></span>
-        </li>
-        <li class="breadcrumb-2">
-            <a href="../PC.html">PC</a><span> ></span>
-        </li>
-        <li class="breadcrumb-3">Alienware Aurora R12</li>
-    </ul>
-</div>
-
-<!-- Banner -->
-<div id="wrapper-banner">
-    <div class="product-details-banner">
-        <img class="mySlides" src="../images/Banner/bannerMsi.png" style="width:100%">
+    <!-- Breadcrum -->
+    <div class="breadcrumb">
+        <ul class="breadcrumb-list">
+            <li class="breadcrumb-1">
+                <a href="../index.html">Home</a><span> ></span>
+            </li>
+            <li class="breadcrumb-2">
+                <a href="../PC.html">PC</a><span> ></span>
+            </li>
+            <li class="breadcrumb-3">Alienware Aurora R12</li>
+        </ul>
     </div>
-</div>
 
-<div id="wrapper">
-    <div class="headline">
-        <h2>Product Details</h2>
+    <!-- Banner -->
+    <div id="wrapper-banner">
+        <div class="product-details-banner">
+            <img class="mySlides" src="../images/Banner/bannerMsi.png" style="width:100%">
+        </div>
     </div>
-</div>
-<hr style="width:50%;margin-left:auto;margin-right:auto">
+
+    <div id="wrapper">
+        <div class="headline">
+            <h2>Product Details</h2>
+        </div>
+    </div>
+    <hr style="width:50%;margin-left:auto;margin-right:auto">
 
 
-<div id="wrapper">
-    <div class="products-padding">
-    <h2 class="products-details-header">Alienware Aurora R12</h2>
-         
-    <div class="header-banner-grid">
-         <div class="grid_row">
-            <div class="grid_column-5-5">
-                <ul class="products-details-no-style">
-                    <li class="justify-text">
-                        <p>
-                            Hardware Specifications of Alienware Aurora R12:
-                        </p>
-                        <br>
-                        <ul>
-                            <li>Intel Core i5 11400F-Core i9 11900KF Quad-Core Processor (Turbo up to 4.8GHz)</li>
-                            <li>8GB DDR4-3200-128GB DDR4-3400 RAM</li>
-                            <li>512GB PCIe NVMe SSD</li>
+    <div id="wrapper">
+        <div class="products-padding">
+            <h2 class="products-details-header">Alienware Aurora R12</h2>
 
-                            <li>Nvidia GTX 1650 Super-RTX 3090 Ti 4GB DDR6 Graphics</li>
-                            <li>15.6 Inch Full HD IPS-Type 144Hz Refresh Rate Display with Adaptive Sync (62% sRGB, 280-nits)</li>
-                            <li>Windows 10 Home</li>
-
-                            <li>Up to 2TB M.2 PCIe SSD + 2TB SATA HDD</li>
-                            <li>Solid after-sale support </li>
-                            <li>Excellent keyboard for typing & gaming</li>
-
-                            <li>Upgradeable</li>
-                            <li>Decent amount of ports (including fastest Thunderbolt 4)</li>
-                            <li>Toolless access </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="grid_column-5-5 ">
-                <ul class="products-details-no-style">
-                    <li><img src="../images/Product details/detailPC3.png" width="100%"></img></li>
-                    <li>
-                        <div class="products-details-price">
-                            <span class="home-products-price-old-price">2100$</span>
-                            <span class="home-products-price-new-price">1899$</span>
-                        </div>
-                    </li>
-                    <li>
+            <div class="header-banner-grid">
+                <div class="grid_row">
+                    <div class="grid_column-5-5">
                         <ul class="products-details-no-style">
-                            <li class="padding-item">
-                                <div class="product-details-button">
-                                    <a href="../giohang.html" class="button1">Buy Now</a>
-                                    <a href="../giohang.html" class="button2">Add to Shopping - Cart</a>
-                                </div>
+                            <li class="justify-text">
+                                <p>
+                                    Hardware Specifications of Alienware Aurora R12:
+                                </p>
+                                <br>
+                                <ul>
+                                    <li>Intel Core i5 11400F-Core i9 11900KF Quad-Core Processor (Turbo up to 4.8GHz)</li>
+                                    <li>8GB DDR4-3200-128GB DDR4-3400 RAM</li>
+                                    <li>512GB PCIe NVMe SSD</li>
+
+                                    <li>Nvidia GTX 1650 Super-RTX 3090 Ti 4GB DDR6 Graphics</li>
+                                    <li>15.6 Inch Full HD IPS-Type 144Hz Refresh Rate Display with Adaptive Sync (62% sRGB, 280-nits)</li>
+                                    <li>Windows 10 Home</li>
+
+                                    <li>Up to 2TB M.2 PCIe SSD + 2TB SATA HDD</li>
+                                    <li>Solid after-sale support </li>
+                                    <li>Excellent keyboard for typing & gaming</li>
+
+                                    <li>Upgradeable</li>
+                                    <li>Decent amount of ports (including fastest Thunderbolt 4)</li>
+                                    <li>Toolless access </li>
+                                </ul>
                             </li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="grid_column-5-5 ">
+                        <ul class="products-details-no-style">
+                            <li><img src="../images/Product details/detailPC3.png" width="100%"></img>
+                            </li>
+                            <li>
+                                <div class="products-details-price">
+                                    <span class="home-products-price-old-price">2100$</span>
+                                    <span class="home-products-price-new-price">1899$</span>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="products-details-no-style">
+                                    <li class="padding-item">
+                                        <div class="product-details-button">
+                                            <a href="#" class="button1">Buy Now</a>
+                                            <a href="#" class="add-to-cart">Add to Shopping - Cart</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="products-details-header2">Some details about Alienware Aurora R12 - The best Intel gaming PC</h2>
+
+        <div class="products-padding">
+            <div class="header-banner-grid">
+                <div class="grid_row">
+                    <div class="grid_column-5-5 ">
+                        <ul class="products-details-no-style">
+                            <li class="justify-text">
+                                <p>
+                                    We have played with the RTX 3090 version of the last-gen Aurora R10, sans liquid chilled GPU, and in gaming terms, you're not going to get a lot higher frame rates than you would with the RTX 3080 build. That's not a huge surprise given our testing of
+                                    the RTX 3090 at launch; it only makes sense if you need that 24GB frame buffer for creative work.
+                                </p>
+                                <br>
+                                <p>
+                                    The unconventional design of the case exploits every inch of its limited space but initially feels a bit awkward to tinker with. However, access to nearly every part of the PC without tools is a definite plus and expedites upgrades and maintenance. There's
+                                    an obvious priority on providing a convenient, premium product with some potential for upgrades, and the Aurora design accomplishes that goal.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-5-5 ">
+                        <img src="../images/Product details/moreDetailPC3.png" width="100%"></img>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div> 
-    <h2 class="products-details-header2">Some details about Alienware Aurora R12 - The best Intel gaming PC</h2>
 
-    <div class="products-padding">
-    <div class="header-banner-grid">
-        <div class="grid_row">
-           <div class="grid_column-5-5 ">
-               <ul class="products-details-no-style">
-                   <li class="justify-text">
-                       <p>
-                        We have played with the RTX 3090 version of the last-gen Aurora R10, sans liquid chilled GPU, and in gaming terms, you're not going to get a lot higher frame rates than you would with the RTX 3080 build. That's not a huge surprise given our testing of the RTX 3090 at launch; it only makes sense if you need that 24GB frame buffer for creative work.
-                        </p>
-                        <br>
-                        <p>
-                            The unconventional design of the case exploits every inch of its limited space but initially feels a bit awkward to tinker with. However, access to nearly every part of the PC without tools is a definite plus and expedites upgrades and maintenance. There's an obvious priority on providing a convenient, premium product with some potential for upgrades, and the Aurora design accomplishes that goal.</p>
-                        </li>
-               </ul>
-           </div>
-           <div class="grid_column-5-5 ">
-               <img src="../images/Product details/moreDetailPC3.png" width="100%"></img>
-           </div>
-       </div>
-   </div>
-</div>
-</div>
-
-<!-- Products -->
-<div id="wrapper">
-    <div class="headline">
-        <h2>Our New Products</h2>  
-    </div>
-    <div class="home">
-        <div class="home-products">
-            <div class="product-top">
-                <a href="../chitietsanpham.html">
-                    <img class="home-products-img" src="../images/PC/newPC6.png"></img>
-                </a>
-                <a class="buy-now" href="../giohang.html">Buy Now</a>
-                <div class="home-products-hot">
-                    <i class="fas fa-check"></i>
-                     NEW
-                </div>   
-            </div>
-                <div class="home-products-cat">PC</div>                    
+    <!-- Products -->
+    <div id="wrapper">
+        <div class="headline">
+            <h2>Our New Products</h2>
+        </div>
+        <div class="home">
+            <div class="home-products">
+                <div class="product-top">
+                    <a href="../chitietsanpham.html">
+                        <img class="home-products-img" src="../images/PC/newPC6.png"></img>
+                    </a>
+                    <a class="buy-now" href="../giohang.html">Buy Now</a>
+                    <div class="home-products-hot">
+                        <i class="fas fa-check"></i> NEW
+                    </div>
+                </div>
+                <div class="home-products-cat">PC</div>
                 <a href="../chitietsanpham.html">
                     <h4 class="home-products-name">Ratchet M - I5 11400F - GT2060 - 16GB</h4>
                 </a>
                 <div class="home-products-price">
                     <span class="home-products-price-new-price">700$</span>
                 </div>
-        </div>
+            </div>
             <div class="home-products">
                 <div class="product-top">
                     <a href="../chitietsanpham.html">
@@ -317,17 +377,16 @@
                     </a>
                     <a class="buy-now" href="../giohang.html">Buy Now</a>
                     <div class="home-products-hot">
-                        <i class="fas fa-check"></i>
-                         NEW
-                    </div>  
-                </div>
-                    <div class="home-products-cat">Monitor</div>                    
-                    <a href="../chitietsanpham.html">
-                        <h4 class="home-products-name">Monitor Gaming Asus ROG STRIX XG27UQ IPS/ 4K/ 144Hz</h4>
-                    </a>
-                    <div class="home-products-price">
-                        <span class="home-products-price-new-price">500$</span>
+                        <i class="fas fa-check"></i> NEW
                     </div>
+                </div>
+                <div class="home-products-cat">Monitor</div>
+                <a href="../chitietsanpham.html">
+                    <h4 class="home-products-name">Monitor Gaming Asus ROG STRIX XG27UQ IPS/ 4K/ 144Hz</h4>
+                </a>
+                <div class="home-products-price">
+                    <span class="home-products-price-new-price">500$</span>
+                </div>
             </div>
             <div class="home-products">
                 <div class="product-top">
@@ -336,17 +395,16 @@
                     </a>
                     <a class="buy-now" href="../giohang.html">Buy Now</a>
                     <div class="home-products-hot">
-                        <i class="fas fa-check"></i>
-                         NEW
-                    </div> 
-                </div>
-                    <div class="home-products-cat">PC</div>                    
-                    <a href="../chitietsanpham.html">
-                        <h4 class="home-products-name">Titan M - G6405 - GT1030 - 8GB</h4>
-                    </a> 
-                    <div class="home-products-price">
-                        <span class="home-products-price-new-price">450$</span>
+                        <i class="fas fa-check"></i> NEW
                     </div>
+                </div>
+                <div class="home-products-cat">PC</div>
+                <a href="../chitietsanpham.html">
+                    <h4 class="home-products-name">Titan M - G6405 - GT1030 - 8GB</h4>
+                </a>
+                <div class="home-products-price">
+                    <span class="home-products-price-new-price">450$</span>
+                </div>
             </div>
             <div class="home-products">
                 <div class="product-top">
@@ -355,17 +413,16 @@
                     </a>
                     <a class="buy-now" href="../giohang.html">Buy Now</a>
                     <div class="home-products-hot">
-                        <i class="fas fa-check"></i>
-                         NEW
-                    </div> 
-                </div>
-                    <div class="home-products-cat">PC</div>                    
-                    <a href="../chitietsanpham.html">
-                        <h4 class="home-products-name">Volibear S - I8 11400F - GTX 1650Ti - 16GB</h4>
-                    </a>
-                    <div class="home-products-price">
-                        <span class="home-products-price-new-price">999$</span>
+                        <i class="fas fa-check"></i> NEW
                     </div>
+                </div>
+                <div class="home-products-cat">PC</div>
+                <a href="../chitietsanpham.html">
+                    <h4 class="home-products-name">Volibear S - I8 11400F - GTX 1650Ti - 16GB</h4>
+                </a>
+                <div class="home-products-price">
+                    <span class="home-products-price-new-price">999$</span>
+                </div>
             </div>
             <div class="home-products">
                 <div class="product-top">
@@ -374,17 +431,16 @@
                     </a>
                     <a class="buy-now" href="../giohang.html">Buy Now</a>
                     <div class="home-products-hot">
-                        <i class="fas fa-check"></i>
-                         NEW
-                    </div>    
-                </div>
-                    <div class="home-products-cat">Laptop</div>                    
-                    <a href="../chitietsanpham.html">
-                        <h4 class="home-products-name">Laptop Asus X413JA 90NB0RC8 - I9 - 240hz - 16GB</h4>
-                    </a>
-                    <div class="home-products-price">
-                        <span class="home-products-price-new-price">1099$</span>
+                        <i class="fas fa-check"></i> NEW
                     </div>
+                </div>
+                <div class="home-products-cat">Laptop</div>
+                <a href="../chitietsanpham.html">
+                    <h4 class="home-products-name">Laptop Asus X413JA 90NB0RC8 - I9 - 240hz - 16GB</h4>
+                </a>
+                <div class="home-products-price">
+                    <span class="home-products-price-new-price">1099$</span>
+                </div>
             </div>
             <div class="home-products">
                 <div class="product-top">
@@ -393,28 +449,31 @@
                     </a>
                     <a class="buy-now" href="../giohang.html">Buy Now</a>
                     <div class="home-products-hot">
-                        <i class="fas fa-check"></i>
-                         NEW
-                    </div>   
-                </div>
-                    <div class="home-products-cat">Laptop</div>                    
-                    <a href="../chitietsanpham.html">
-                        <h4 class="home-products-name">Laptop Asus Vivobook M513UA-L1240T - AMD Ryzen 7</h4>
-                    </a>
-                    <div class="home-products-price">
-                        <span class="home-products-price-new-price">1899$</span>
+                        <i class="fas fa-check"></i> NEW
                     </div>
+                </div>
+                <div class="home-products-cat">Laptop</div>
+                <a href="../chitietsanpham.html">
+                    <h4 class="home-products-name">Laptop Asus Vivobook M513UA-L1240T - AMD Ryzen 7</h4>
+                </a>
+                <div class="home-products-price">
+                    <span class="home-products-price-new-price">1899$</span>
+                </div>
             </div>
-         </div>   
+        </div>
         <!-- <div class="all-products">
             <a href=""> See more </a>
         </div>     -->
-</div>
+    </div>
 
-<!-- Group Logo -->
-<br>
-<div id="wrapper">
-    <div class="header-banner-grid">
+
+    <script src="../Javascript/details/detailPC3.js"></script>
+
+
+    <!-- Group Logo -->
+    <br>
+    <div id="wrapper">
+        <div class="header-banner-grid">
             <div class="grid_row">
                 <div class="logo-grid_column-8-part">
                     <ul class="header-list">
@@ -489,8 +548,8 @@
                     </ul>
                 </div>
             </div>
+        </div>
     </div>
-</div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -500,11 +559,13 @@
                     <div class="grid_column-5-5">
                         <h3 class="footer_super_heading">Sign Up To Our Newsletter</h3>
                         <ul class="footer-list">
-                            <li class="footer_super_heading2"><p>Be the first to hear about the latest offers.</p></li>
+                            <li class="footer_super_heading2">
+                                <p>Be the first to hear about the latest offers.</p>
+                            </li>
                         </ul>
                     </div>
                     <div class="grid_column-5-5">
-                        <div class ="footer_search_bar">
+                        <div class="footer_search_bar">
                             <input type="text" placeholder="Your Email" class="search_text">
                             <button style="border:none">Subscribe</button>
                         </div>
@@ -578,13 +639,17 @@
                                 <p class="footer-address">Address: 273 An Duong Vuong Str, District 5, Ho Chi Minh City</p>
                             </li>
                             <li class="footer-item">
-                                <p class="footer-address">Phone: <font color="#056ebe" >(078) 398 4721</font></p>
+                                <p class="footer-address">Phone:
+                                    <font color="#056ebe">(078) 398 4721</font>
+                                </p>
                             </li>
                             <li class="footer-item">
                                 <p class="footer-address">We are open: Monday-Sunday: 9:00 AM - 5:30 PM</p>
                             </li>
                             <li class="footer-item">
-                                <p class="footer-address">E-mail: <font color="#056ebe" >klkcomputer@gmail.com</font></p>
+                                <p class="footer-address">E-mail:
+                                    <font color="#056ebe">klkcomputer@gmail.com</font>
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -596,7 +661,7 @@
                     <div class="grid_column-3-3-3">
                         <ul class="footer-list">
                             <li class="footer-item">
-                                <a href="https://www.facebook.com/khanh.quoc44" class="footer-icon_link"> 
+                                <a href="https://www.facebook.com/khanh.quoc44" class="footer-icon_link">
                                     <i class="fab fa-facebook-square"></i>
                                 </a>
                                 <a href="https://www.instagram.com/__quockhanh__/" class="footer-icon_link">
@@ -614,9 +679,9 @@
                                     <img src="../images/Logo/maestro.png" alt="">
                                     <img src="../images/Logo/discover.png" alt="">
                                     <img src="../images/Logo/american-express.png" alt="">
-                                </div>                            
+                                </div>
                             </li>
-                        </ul> 
+                        </ul>
                     </div>
                     <div class="grid_column-3-3-3">
                         <ul class="footer-list">
@@ -630,5 +695,5 @@
         </div>
     </footer>
 </body>
+
 </html>
-    

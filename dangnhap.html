@@ -1,227 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/loginstyle.css">
-    <script language="javascript" src="login.js"></script>
+    <link rel="stylesheet" href="./css/fliter.css">
+    <script language="javascript" src="Javascript/fliter.js"></script>
+    <script language="javascript" src="Javascript/login.js"></script>
     <link rel="shortcut icon" href="images/Icon/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>KLK's Computers- Hi-end PC & Laptop</title>
 </head>
-<body>
-        <!-- Hiệu ứng tuyết rơi -->
-        <div class="snowflakes" aria-hidden="true">
-            <div class="snowflake">
+
+<body onload="logined()">
+    <!-- Hiệu ứng tuyết rơi -->
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
             ❅
-            </div>
-            <div class="snowflake">
-            ❅
-            </div>
-            <div class="snowflake">
-            ❆
-            </div>
-            <div class="snowflake">
-            ❄
-            </div>
-            <div class="snowflake">
-            ❅
-            </div>
-            <div class="snowflake">
-            ❆
-            </div>
-            <div class="snowflake">
-            ❄
-            </div>
-            <div class="snowflake">
-            ❅
-            </div>
-            <div class="snowflake">
-            ❆
-            </div>
-            <div class="snowflake">
-            ❄
-            </div>
-          </div>
-          
-        <!-- Header with search -->
-        <div class="header_withsearch">
-                <div class="header_logo" >
-                    <a href="index.html">
-                        <img src="images/Logo/newlogo.png" alt="" class="header_logo_img">
-                    </a>
-                </div>
-                <div class="header_search">
-                    <input type="text" placeholder="Search" class="header_search_input"> 
-                    <a href="" id="search_link">
-                        <i class="fas fa-desktop"></i>
-                        By name <i>|</i> 
-                    </a> 
-                    <a href="" id="search_link">
-                        <i class="far fa-copyright"></i>
-                        By category <i>|</i>
-                    </a>
-                    <a href="" id="search_link">
-                        <i class="far fa-money-bill-alt"></i>
-                        By price
-                    </a>
-                </div>
-                <div class="header_search_btn">
-                    <a href="#">
-                        <i class="header_search_btn_icon fas fa-search"></i>
-                    </a>
-                </div>   
-                <div class="header_cart" >
-                    <a href="giohang.html"><i data-count="3" class="header_cart_icon fas fa-shopping-cart"></i></a>
-                    <p>Shopping-Cart</p>
-                </div>
-                <div class="header_account" >
-                    <a href="dangnhap.html"><i class="header_account_icon fas fa-user-circle"></i></a>
-                    <p>Sign in / Sign up</p>
-                </div>
-                <div class="header_phone" >
-                    <a href="#"><i class="header_phone_icon fas fa-phone"></i></a>
-                    <p>(078)-3984721</p>
-                </div>
         </div>
-    
-        
-        <!--Navigation -->
-        <div class="navigation">
-            <div id="wrapper-navigation">
-                <div class="header-grid">
-                        <div class="grid_row">
-                            <div class="header-grid_column-2-4">
-                                <ul class="header-list">
-                                    <li><a href="index.html" class="navigation-font header-list">
-                                        <i class="fas fa-home"></i> HOME
-                                    </a></li>
-                                </ul>
-                            </div>
-                            <div class="header-grid_column-2-4">
-                                <ul class="header-list">
-                                    <li class="dropdown">
-                                        <a href="Laptop.html" class="dropbtn navigation-font">
-                                            <i class="fas fa-list"></i> PRODUCTS
-                                        </a>
-                                        <div class="dropdown-content">
-                                        <a class="dropdown-content-block" href="Sale.html">Hot Products</a>
-                                        <a href="PC.html">Hi-end PC</a>
-                                        <a href="Laptop.html">Laptop Gaming</a>
-                                        <a href="Monitor.html">Minotor</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                                
-                            </div>
-                            <div class="header-grid_column-2-4">
-                                <ul class="header-list">
-                                    <li><a href="news.html" class="navigation-font">
-                                        <i class="far fa-newspaper"></i> NEWS
-                                    </a></li>
-                                </ul>
-                                
-                            </div>
-                            <div class="header-grid_column-2-4">
-                                <ul class="header-list">
-                                    <li><a href="Sale.html" class="navigation-font">
-                                        <i class="fas fa-tags"></i> SALE
-                                    </a></li>
-                                </ul>
-                                
-                            </div>
-                            <div class="header-grid_column-2-4">
-                                <ul class="header-list">
-                                    <li><a href="aboutus.html" class="navigation-font">
-                                        <i class="fas fa-info-circle"></i> ABOUT
-                                    </a></li>
-                                </ul>
-                            </div>
-                        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+    </div>
+
+    <!-- Header with search -->
+    <div class="header_withsearch">
+        <div class="header_logo">
+            <a href="index.html">
+                <img src="images/Logo/newlogo.png" alt="" class="header_logo_img">
+            </a>
+        </div>
+        <div class="header_search">
+            <!-- <input type="text" placeholder="Search" class="header_search_input">  -->
+            <div class="fliter-dropdown">
+                <div id="myDropdown" class="fliter-dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="Sale.html">
+                        <i class="fas fa-list"></i> Hot Products
+                    </a>
+                    <a href="PC.html">
+                        <i class="fas fa-list"></i> Hi-end PC
+                    </a>
+                    <a href="Laptop.html">
+                        <i class="fas fa-list"></i> Laptop Gaming
+                    </a>
+                    <a href="Monitor.html">
+                        <i class="fas fa-list"></i> Monitor
+                    </a>
+
+                    <a href="Product details html/detailLap3.html">
+                        <i class="fas fa-laptop"></i> ASUS TUF Dash F15
+                    </a>
+                    <a href="chitietsanpham.html">
+                        <i class="fas fa-laptop"></i> Laptop ACER Aspire 5
+                    </a>
+                    <a href="Product details html/detailLap2.html">
+                        <i class="fas fa-laptop"></i> Lenovo IdeaPad Gaming 3
+                    </a>
+                    <a href="Product details html/detailLap1.html">
+                        <i class="fas fa-laptop"></i> Lenovo Legion 5
+                    </a>
+
+                    <a href="Product details html/detailPC3.html">
+                        <i class="fas fa-mobile"></i> Alienware Aurora R12
+                    </a>
+                    <a href="Product details html/detailPC2.html">
+                        <i class="fas fa-mobile"></i> CyberPowerPC Infinity X109 Gaming PC
+                    </a>
+                    <a href="Product details html/detailPC1.html">
+                        <i class="fas fa-mobile"></i> HP Omen i5 10400F RTX 2060
+                    </a>
+                </div>
+            </div>
+
+            <!-- <a href="" id="search_link">
+                <i class="fas fa-desktop"></i> By name <i>|</i>
+            </a>
+            <a href="" id="search_link">
+                <i class="far fa-copyright"></i> By category <i>|</i>
+            </a>
+            <a href="" id="search_link">
+                <i class="far fa-money-bill-alt"></i> By price
+            </a> -->
+        </div>
+        <div class="header_search_btn">
+            <a href="#">
+                <i class="header_search_btn_icon fas fa-search"></i>
+            </a>
+        </div>
+        <div class="header_cart">
+            <a href="#" onclick="return showDialogCart()"><i class="header_cart_icon fas fa-shopping-cart"><span class="number_cart">0</span></i></a>
+            <p>Shopping-Cart</p>
+        </div>
+        <div class="header_account">
+            <a href="dangnhap.html"><i class="header_account_icon fas fa-user-circle"></i></a>
+            <p>Sign in / Sign up</p>
+        </div>
+        <div class="header_phone">
+            <a href="#"><i class="header_phone_icon fas fa-phone"></i></a>
+            <p>(078)-3984721</p>
+        </div>
+    </div>
+
+
+    <!--Navigation -->
+    <div class="navigation">
+        <div id="wrapper-navigation">
+            <div class="header-grid">
+                <div class="grid_row">
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li>
+                                <a href="index.html" class="navigation-font header-list">
+                                    <i class="fas fa-home"></i> HOME
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li class="dropdown">
+                                <a href="Laptop.html" class="dropbtn navigation-font">
+                                    <i class="fas fa-list"></i> PRODUCTS
+                                </a>
+                                <div class="dropdown-content">
+                                    <a class="dropdown-content-block" href="Sale.html">Hot Products</a>
+                                    <a href="PC.html">Hi-end PC</a>
+                                    <a href="Laptop.html">Laptop Gaming</a>
+                                    <a href="Monitor.html">Monitor</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li>
+                                <a href="news.html" class="navigation-font">
+                                    <i class="far fa-newspaper"></i> NEWS
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li>
+                                <a href="Sale.html" class="navigation-font">
+                                    <i class="fas fa-tags"></i> SALE
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li class="dropdown">
+                                <a href="Laptop.html" class="dropbtn navigation-font">
+                                    <i class="fas fa-info-circle"></i> CONTACT
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="contactus.html">Contact Info</a>
+                                    <a href="aboutus.html">About Us</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        
-<!-- Breadcrum -->
+    </div>
+
+    <!-- Breadcrum -->
     <div class="breadcrumb">
         <ul class="breadcrumb-list">
             <li class="breadcrumb-1">
-                <a href="index.html" >Home</a><span> ></span>
+                <a href="index.html">Home</a><span> ></span>
             </li>
             <li class="breadcrumb-2">Sign-in</li>
         </ul>
     </div>
 
     <!-- Form Login -->
-<div id="wrapper">
-    <h2 class="login-title">Customer Sign in</h2>
-    <div class="header-banner-grid">
-         <div class="grid_row">
-            <div class="grid_column-5-5 ">
-                <div class="background-form-login">
-                    <div class="padding-form-login">
-                    <span class="form-login-text">Login Account</span>
-                        <ul class="style-form-login">
-                            <li class="padding-item">
-                                <p>If you have an account, you login by Email address</p>
-                            </li>
-                            <form action="index.html" onsubmit="return validate()">
-                            <li class="padding-text">
-                                <h4>Email<font color="red">*</font></h4>
-                            </li>
-                            <li class="padding-item">
-                                <div class ="">
-                                    <input type="text" placeholder="Your Email" class="form-login-input" name="username" id="username" autofocus>
-                                </div>
-                            </li>
-                            <li class="padding-text">
-                                <h4>Password<font color="red">*</font></h4>
-                            </li>
-                            <li class="padding-item">
-                                <div class ="">
-                                    <input type="password" placeholder="Your password" class="form-login-input" name="password" id="password">
-                                </div>
-                            </li>
-                            <li class="padding-item">
-                                    <div class="form-login2-to-signup-button">
-                                        <button type="submit" class="button"> Sign in </button>
-                                        <a href="" class="forgot-text"><font color="red">Forgot your password?</font></a>
-                                    </div>
-                            </li>
-                            </form>
-                        </ul>
-                    </div>    
-                </div>
-            </div>
-            <div class="grid_column-5-5 ">
-                <div class="background-form-login">
-                <div class="padding-form-login">
-                    <span class="form-login-text">New Customer ?</span>
-                    <div class="form-login2-list">
-                        <p>Create an account has many benefits:</p>
-                        <ul>
-                            <li>Check out faster</li>
-                            <li>Keep more than one address</li>
-                            <li>Track orders and more</li>
-                        </ul>
-                    </div>
-                    <div class="form-login2-to-signup-button">
-                        <a href="dangky.html" class="button" >Create An Account</a>
+    <div id="wrapper">
+        <h2 class="login-title">Customer Sign in</h2>
+        <div class="header-banner-grid">
+            <div class="grid_row">
+                <div class="grid_column-5-5 ">
+                    <div class="background-form-login">
+                        <div class="padding-form-login">
+                            <span class="form-login-text">Login Account</span>
+                            <ul class="style-form-login">
+                                <li class="padding-item">
+                                    <p>If you have an account, you login by Email address</p>
+                                </li>
+                                <form onsubmit="return checklogin()">
+                                    <li class="padding-text">
+                                        <h4>Email
+                                            <font color="red">*</font>
+                                        </h4>
+                                    </li>
+                                    <li class="padding-item">
+                                        <div class="">
+                                            <input type="text" placeholder="Your Email" class="form-login-input" name="username" id="username" autofocus>
+                                        </div>
+                                    </li>
+                                    <li class="padding-text">
+                                        <h4>Password
+                                            <font color="red">*</font>
+                                        </h4>
+                                    </li>
+                                    <li class="padding-item">
+                                        <div class="">
+                                            <input type="password" placeholder="Your password" class="form-login-input" name="password" id="password">
+                                        </div>
+                                    </li>
+                                    <li class="padding-item">
+                                        <div class="form-login2-to-signup-button">
+                                            <button type="submit" class="button"> Sign in </button>
+                                            <a href="" class="forgot-text">
+                                                <font color="red">Forgot your password?</font>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </form>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div class="grid_column-5-5 ">
+                    <div class="background-form-login">
+                        <div class="padding-form-login">
+                            <span class="form-login-text">New Customer ?</span>
+                            <div class="form-login2-list">
+                                <p>Create an account has many benefits:</p>
+                                <ul>
+                                    <li>Check out faster</li>
+                                    <li>Keep more than one address</li>
+                                    <li>Track orders and more</li>
+                                </ul>
+                            </div>
+                            <div class="form-login2-to-signup-button">
+                                <a href="dangky.html" class="button">Create An Account</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-        
-<!-- Group Logo -->
-<br>
-<div id="wrapper">
-    <div class="header-banner-grid">
+    <!-- Group Logo -->
+    <br>
+    <div id="wrapper">
+        <div class="header-banner-grid">
             <div class="grid_row">
                 <div class="logo-grid_column-8-part">
                     <ul class="header-list">
@@ -296,10 +355,10 @@
                     </ul>
                 </div>
             </div>
+        </div>
     </div>
-</div>
-        
-       <!-- Footer -->
+
+    <!-- Footer -->
     <footer class="footer">
         <div id="wrapper-footer">
             <div class="grid">
@@ -307,11 +366,13 @@
                     <div class="grid_column-5-5">
                         <h3 class="footer_super_heading">Sign Up To Our Newsletter</h3>
                         <ul class="footer-list">
-                            <li class="footer_super_heading2"><p>Be the first to hear about the latest offers.</p></li>
+                            <li class="footer_super_heading2">
+                                <p>Be the first to hear about the latest offers.</p>
+                            </li>
                         </ul>
                     </div>
                     <div class="grid_column-5-5">
-                        <div class ="footer_search_bar">
+                        <div class="footer_search_bar">
                             <input type="text" placeholder="Your Email" class="search_text">
                             <button style="border:none">Subscribe</button>
                         </div>
@@ -385,13 +446,17 @@
                                 <p class="footer-address">Address: 273 An Duong Vuong Str, District 5, Ho Chi Minh City</p>
                             </li>
                             <li class="footer-item">
-                                <p class="footer-address">Phone: <font color="#056ebe" >(078) 398 4721</font></p>
+                                <p class="footer-address">Phone:
+                                    <font color="#056ebe">(078) 398 4721</font>
+                                </p>
                             </li>
                             <li class="footer-item">
                                 <p class="footer-address">We are open: Monday-Sunday: 9:00 AM - 5:30 PM</p>
                             </li>
                             <li class="footer-item">
-                                <p class="footer-address">E-mail: <font color="#056ebe" >klkcomputer@gmail.com</font></p>
+                                <p class="footer-address">E-mail:
+                                    <font color="#056ebe">klkcomputer@gmail.com</font>
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -403,7 +468,7 @@
                     <div class="grid_column-3-3-3">
                         <ul class="footer-list">
                             <li class="footer-item">
-                                <a href="https://www.facebook.com/khanh.quoc44" class="footer-icon_link"> 
+                                <a href="https://www.facebook.com/khanh.quoc44" class="footer-icon_link">
                                     <i class="fab fa-facebook-square"></i>
                                 </a>
                                 <a href="https://www.instagram.com/__quockhanh__/" class="footer-icon_link">
@@ -421,9 +486,9 @@
                                     <img src="images/Logo/maestro.png" alt="">
                                     <img src="images/Logo/discover.png" alt="">
                                     <img src="images/Logo/american-express.png" alt="">
-                                </div>                            
+                                </div>
                             </li>
-                        </ul> 
+                        </ul>
                     </div>
                     <div class="grid_column-3-3-3">
                         <ul class="footer-list">
@@ -437,4 +502,5 @@
         </div>
     </footer>
 </body>
+
 </html>
