@@ -237,7 +237,7 @@ function displayCart() {
                 <div id="wrapper_6">
                     <div class="grid_row">
                         <div class="cart_info grid_column_1_6">
-                            <img src="/images/${item.catagory}/${item.tag}.png" class="img_cart">
+                            <img src="images/${item.catagory}/${item.tag}.png" class="img_cart">
                         </div>
                         <div class="cart_info grid_column_2_6">
                             <span>${item.name}</span>
