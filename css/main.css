@@ -211,8 +211,10 @@
     .header_search_btn {
         background-color: rgb(250, 54, 54);
         margin-left: 2px;
-        padding: 6px 12px;
+        padding: 8.5px 12px;
         border-radius: 4px;
+        margin-top: 5px;
+        margin-left: 5px;
     }
     
     .header_search_btn>a {
@@ -938,12 +940,19 @@
     
     .log-out {
         text-decoration: none;
-        color: rgb(255, 255, 255);
-        background-color: rgb(102, 91, 91);
+        color: rgb(112, 106, 106);
         padding: 0px 20px;
     }
     
     .log-out:hover {
         color: red;
-        background-color: rgb(255, 255, 255);
+    }
+    
+    p.user-display-name {
+        font-weight: 700;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }

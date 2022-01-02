@@ -434,7 +434,7 @@ function displayCart() {
                                 </div>
                                 <div class="grid_row grid_row_sum">
                                     <div class="grid_column_1_2">
-                                        <p class="left_info">VAT(15%)</p>
+                                        <p class="left_info">VAT(20%)</p>
                                     </div>
                                     <div class="grid_column_1_2">
                                         <p class="right_info">$${cartCost * 0.15}</p>

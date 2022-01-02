@@ -48,8 +48,8 @@ function logined() {
             selectClass.innerHTML = ``;
             selectClass.innerHTML += `
             <a href="#"><i class="header_account_icon fas fa-user-circle"></i></a>
-            <p>${storeDP}</p>
-            <a href="" onclick="logout()" class="log-out">Sign out</a>
+            <p class="user-display-name">${storeDP}</p>
+            <a href="" onclick="logout()" class="log-out"><i class="fas fa-sign-out-alt"></i> Sign out</a>
             `;
         }
     }
