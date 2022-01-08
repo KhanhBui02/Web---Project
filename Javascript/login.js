@@ -11,7 +11,7 @@ function store() {
         localStorage.setItem("Email", email);
         localStorage.setItem("Password", pw);
         localStorage.setItem("DisplayName", dp);
-        window.location = "https://baitapthuchanh1234.000webhostapp.com/%C4%90%E1%BB%93%20%C3%A1n/dangnhap.html";
+        window.location = "https://baitapthuchanh1234.000webhostapp.com/Do_an/dangnhap.html";
         alert("Sign up Success");
         return true;
     }
@@ -31,7 +31,7 @@ function checklogin() {
         return false;
     } else {
         localStorage.setItem("login", 1);
-        window.location = "https://baitapthuchanh1234.000webhostapp.com/%C4%90%E1%BB%93%20%C3%A1n/index.html";
+        window.location = "https://baitapthuchanh1234.000webhostapp.com/Do_an/index.html";
         alert("Sign in success");
         return true;
     }
@@ -70,7 +70,7 @@ function showDialogCart() {
         alert("Please sign in to do that");
         return false;
     } else {
-        window.location = "https://baitapthuchanh1234.000webhostapp.com/%C4%90%E1%BB%93%20%C3%A1n/giohang.html";
+        window.location = "https://baitapthuchanh1234.000webhostapp.com/Do_an/giohang.html";
         return true;
     }
 }

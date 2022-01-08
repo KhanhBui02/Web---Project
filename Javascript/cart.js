@@ -553,6 +553,6 @@ function confirm() {
     localStorage.removeItem("totalCost");
     localStorage.removeItem("cartNumbers");
     alert("Payment success!! thanks for buying product from our store.");
-    window.location = "http://localhost:5500/index.html";
+    window.location = "https://baitapthuchanh1234.000webhostapp.com/Do_an/index.html";
     return true;
 }
