@@ -29,7 +29,7 @@ function checklogin() {
 
     if (email != storeEmail || pw != storePW) {
         alert("Email or password incorrect");
-        return true;
+        return false;
         
     } else {
         localStorage.setItem("login", 1);
