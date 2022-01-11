@@ -11,21 +11,21 @@ if (Login == 1) {
         {
             name: 'Lenovo Legion 5 15 - 120Hz',
             tag: 'Laptop1',
-            catagory: 'Laptop',
+            catagory: 'Product details',
             price: 499,
             inCart: 0
         },
         {
             name: 'Lenovo IdeaPad Gaming 3 15',
             tag: 'Laptop2',
-            catagory: 'Laptop',
+            catagory: 'Product details',
             price: 656,
             inCart: 0
         },
         {
             name: 'ASUS TUF Dash F15',
-            tag: 'Laptop3',
-            catagory: 'Laptop',
+            tag: 'detailLaptop3',
+            catagory: 'Product details',
             price: 799,
             inCart: 0
         },

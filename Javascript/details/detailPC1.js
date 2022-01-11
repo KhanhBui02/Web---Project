@@ -2,7 +2,7 @@ let Login = localStorage.getItem("login");
 if (Login == 1) {
     let carts = document.querySelectorAll('.add-to-cart');
     let products = [{
-        name: 'HP Omen',
+        name: 'HP Omen i5 10400F RTX 2060',
         tag: 'detailPC1',
         catagory: 'Product details',
         price: 340,

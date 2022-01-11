@@ -419,7 +419,7 @@ function displayCart() {
                                         <p class="left_info">Shipping</p>
                                     </div>
                                     <div class="grid_column_1_2">
-                                        <p class="right_info">$201</p>
+                                        <p class="right_info">$20</p>
                                     </div>
                                 </div>
                                 <p id="comment">(Standard Rate - Price may vary depending on the item/destination. Staff will contact you.)</p>
@@ -428,7 +428,7 @@ function displayCart() {
                                         <p class="left_info">TAX(10%)</p>
                                     </div>
                                     <div class="grid_column_1_2">
-                                        <p class="right_info">$${cartCost * 0.1}
+                                        <p class="right_info">$${(cartCost * 0.1).toFixed(2)}
                                             <p>
                                     </div>
                                 </div>
@@ -437,7 +437,7 @@ function displayCart() {
                                         <p class="left_info">VAT(20%)</p>
                                     </div>
                                     <div class="grid_column_1_2">
-                                        <p class="right_info">$${cartCost * 0.15}</p>
+                                        <p class="right_info">$${(cartCost * 0.15).toFixed(2)}</p>
                                     </div>
                                 </div>
                                 <div class="grid_row grid_row_sum">
@@ -445,7 +445,7 @@ function displayCart() {
                                         <p class="left_info">Order Total</p>
                                     </div>
                                     <div class="grid_column_1_2 price">
-                                        <p class="right_info">$${cartCost + cartCost * 0.1 + cartCost * 0.15 + 201}</p>
+                                        <p class="right_info">$${(cartCost + cartCost * 0.1 + cartCost * 0.15 + 201).toFixed(2)}</p>
                                     </div>
                                 </div>
                             </div>
@@ -553,6 +553,7 @@ function confirm() {
     localStorage.removeItem("totalCost");
     localStorage.removeItem("cartNumbers");
     alert("Payment success!! thanks for buying product from our store.");
-    window.location = "https://baitapthuchanh1234.000webhostapp.com/Do_an/index.html";
+    // window.location = "https://baitapthuchanh1234.000webhostapp.com/Do_an/index.html";
+    window.location.href = "http://127.0.0.1:5500/index.html";
     return true;
 }

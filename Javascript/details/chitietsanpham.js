@@ -2,8 +2,8 @@ let Login = localStorage.getItem("login");
 if (Login == 1) {
     let carts = document.querySelectorAll('.add-to-cart');
     let products = [{
-        name: 'Laptop ACER Aspire 5',
-        tag: 'Laptop3Detail',
+        name: 'Laptop ACER Aspire 5 - 144Hz - I5',
+        tag: 'Laptop3',
         catagory: 'Laptop',
         price: 399,
         inCart: 0

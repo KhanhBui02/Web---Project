@@ -2,8 +2,8 @@ let Login = localStorage.getItem("login");
 if (Login == 1) {
     let carts = document.querySelectorAll('.add-to-cart');
     let products = [{
-        name: 'Alienware Aurora R12',
-        tag: 'detailPC3',
+        name: 'Alienware Aurora R12 - 32GB i5 11400F–Core i9 11900KF',
+        tag: 'PC3',
         catagory: 'Product details',
         price: 1899,
         inCart: 0

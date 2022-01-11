@@ -3,7 +3,7 @@ if (Login == 1) {
     let carts = document.querySelectorAll('.add-to-cart');
     let products = [{
         name: 'CyberPowerPC Infinity X109 Gaming PC',
-        tag: 'detailPC2',
+        tag: 'PC2',
         catagory: 'Product details',
         price: 1499,
         inCart: 0

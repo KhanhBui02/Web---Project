@@ -2,8 +2,8 @@ let Login = localStorage.getItem("login");
 if (Login == 1) {
     let carts = document.querySelectorAll('.add-to-cart');
     let products = [{
-        name: 'Lenovo Legion 5 15',
-        tag: 'detailLaptop1',
+        name: 'Lenovo IdeaPad Gaming 3 15',
+        tag: 'laptop2',
         catagory: 'Product details',
         price: 499,
         inCart: 0
